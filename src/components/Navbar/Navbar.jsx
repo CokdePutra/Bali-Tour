@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import ButtonBook from "../Button/buttonBook";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,14 +39,14 @@ const Navbar = () => {
           className={`flex-1 justify-center items-center md:flex ${
             isOpen ? "block" : "hidden"
           } md:block`}>
-          <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mt-4 md:mt-0">
+          <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mt-4 md:mt-0 relative">
             <NavLink
               end
               to="/"
               className={({ isActive }) =>
                 `relative text-black hover:underline transition-all duration-300 ${
                   isActive ? "underline" : ""
-                } py-2 md:py-0`
+                } py-2 md:py-0 ${isOpen ? "absolute left-0 top-0" : ""}`
               }>
               Home
             </NavLink>
@@ -83,11 +84,7 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
-        <div className="ml-auto mt-4 md:mt-0 hidden md:block">
-          <button className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600 transition-all duration-300 poppins-bold">
-            BOOK NOW
-          </button>
-        </div>
+        <ButtonBook />
       </div>
     </nav>
   );
