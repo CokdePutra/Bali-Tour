@@ -1,21 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import ButtonBook from "../Button/buttonBook";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navbarRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav className="w-full bg-transparent poppins-regular">
-      <div className="flex justify-between items-center">
-        <div className="text-black poppins-bold text-2xl">
+    <nav
+      ref={navbarRef}
+      className="relative md:relative w-full bg-transparent z-50 poppins-regular">
+      <div className="flex justify-between items-center p-4 mx-[2rem]">
+        {/* Desktop Title */}
+        <div className="text-white poppins-bold text-3xl md:block hidden">
           BAGUS BALI TOUR & TRANSPORT
         </div>
-        <div className="md:hidden">
+
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
             className="text-black focus:outline-none">
@@ -35,56 +54,68 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
+
+        {/* Nav Links */}
         <div
-          className={`flex-1 justify-center items-center md:flex ${
-            isOpen ? "block" : "hidden"
-          } md:block`}>
-          <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mt-4 md:mt-0 relative">
+          className={`absolute poppins-bold left-0 w-full md:static md:flex md:items-center md:justify-center md:w-auto bg-white md:bg-transparent transition-all duration-300 ease-in-out ${
+            isOpen ? "top-12 block shadow-lg md:shadow-none" : "hidden"
+          }`}>
+          <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mt-4 md:mt-0">
             <NavLink
               end
               to="/"
               className={({ isActive }) =>
-                `relative text-black hover:underline transition-all duration-300 ${
+                `relative text-black md:text-white hover:underline transition-all duration-300 ${
                   isActive ? "underline" : ""
-                } py-2 md:py-0 ${isOpen ? "absolute left-0 top-0" : ""}`
-              }>
+                } py-2 md:py-0`
+              }
+              onClick={() => setIsOpen(false)}>
               Home
             </NavLink>
             <NavLink
               to="/Pickup&Transfer"
               className={({ isActive }) =>
-                `relative text-black hover:underline transition-all duration-300 ${
+                `relative text-black md:text-white hover:underline transition-all duration-300 ${
                   isActive ? "underline" : ""
                 } py-2 md:py-0`
-              }>
+              }
+              onClick={() => setIsOpen(false)}>
               Pickup/Transfer
             </NavLink>
             <NavLink
               to="/Activities"
               className={({ isActive }) =>
-                `relative text-black hover:underline transition-all duration-300 ${
+                `relative text-black md:text-white hover:underline transition-all duration-300 ${
                   isActive ? "underline" : ""
                 } py-2 md:py-0`
-              }>
+              }
+              onClick={() => setIsOpen(false)}>
               Activities
             </NavLink>
             <a
               href="/#Contact"
-              className="relative text-black hover:underline transition-all duration-300 py-2 md:py-0">
+              className="relative text-black md:text-white hover:underline transition-all duration-300 py-2 md:py-0"
+              onClick={() => setIsOpen(false)}>
               Contact
             </a>
             <NavLink
               to="/Contact"
               className={({ isActive }) =>
-                `relative text-black hover:underline transition-all duration-300 ${
+                `relative text-black md:text-white hover:underline transition-all duration-300 ${
                   isActive ? "underline" : ""
                 } py-2 md:py-0`
-              }>
+              }
+              onClick={() => setIsOpen(false)}>
               Review
             </NavLink>
           </div>
         </div>
-        <ButtonBook />
+
+        {/* Button */}
+        <ButtonBook
+          textButton="BOOK NOW"
+          className="text-white md:block hidden"
+        />
       </div>
     </nav>
   );

@@ -1,12 +1,11 @@
 import React from "react";
 
-const ButtonBook = () => {
+const ButtonBook = ({ textButton, className }) => {
   return (
-    <div className="ml-auto mt-4 md:mt-0 hidden md:block">
-      <button className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600 transition-all duration-300 poppins-bold">
-        BOOK NOW
-      </button>
-    </div>
+    <button
+      className={`bg-secondary-color mt-4  text-white px-[1.5rem] py-[0.8rem] rounded-[10px] hover:bg-secondary-shadow transition-all duration-300 poppins-bold md:mt-0 md:block ${className}`}>
+      {textButton}
+    </button>
   );
 };
 export default ButtonBook;
