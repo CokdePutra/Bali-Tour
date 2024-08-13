@@ -12,8 +12,8 @@ const Home = () => {
         <Navbar />
         <Hero
           backgroundImage={HeroImage.Home}
-          title="Welcome to Bagus Bali Tour & Transport"
-          desc="Discover the beauty of Bali with us"
+          title="Your Bali, Your Way Exquisite Moments Through Personalized Tours."
+          desc="Your Journey to Paradise Begins Here!"
         />
         <div className="popular-destination">
           <h2 className="Title mt-16 text-center text-4xl font-bold">

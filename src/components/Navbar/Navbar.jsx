@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center bg-transparent">
           <button
             onClick={toggleMenu}
             className={`focus:outline-none ${
