@@ -7,7 +7,7 @@ const Activities = () => {
   return (
     <>
       <Navbar />
-      <Hero backgroundImage={HeroImage.Activities} />
+      <Hero backgroundImage={HeroImage.Activities} title="Activities" />
     </>
   );
 };

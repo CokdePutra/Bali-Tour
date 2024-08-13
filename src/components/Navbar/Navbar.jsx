@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import ButtonBook from "../Button/buttonBook";
+import ButtonBook from "../Button/ButtonBook";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,7 @@ const Navbar = () => {
       className="relative md:relative w-full bg-transparent z-50 poppins-regular">
       <div className="flex justify-between items-center p-4 mx-[2rem]">
         {/* Desktop Title */}
-        <div className="text-white poppins-bold text-3xl md:block hidden">
+        <div className="text-white poppins-bold text-3xl lg:block hidden">
           BAGUS BALI TOUR & TRANSPORT
         </div>
 
@@ -37,7 +37,9 @@ const Navbar = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
-            className="text-black focus:outline-none">
+            className={`focus:outline-none ${
+              isOpen ? "text-black" : "text-white"
+            }`}>
             <svg
               className="w-6 h-6"
               fill="none"
@@ -58,16 +60,16 @@ const Navbar = () => {
         {/* Nav Links */}
         <div
           className={`absolute poppins-bold left-0 w-full md:static md:flex md:items-center md:justify-center md:w-auto bg-white md:bg-transparent transition-all duration-300 ease-in-out ${
-            isOpen ? "top-12 block shadow-lg md:shadow-none" : "hidden"
+            isOpen
+              ? "top-0 -z-10 absolute block shadow-lg md:shadow-none"
+              : "hidden"
           }`}>
           <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mt-4 md:mt-0">
             <NavLink
               end
               to="/"
               className={({ isActive }) =>
-                `relative text-black md:text-white hover:underline transition-all duration-300 ${
-                  isActive ? "underline" : ""
-                } py-2 md:py-0`
+                `Navlink relative ${isActive ? "underline" : ""} py-2 md:py-0`
               }
               onClick={() => setIsOpen(false)}>
               Home
@@ -75,9 +77,7 @@ const Navbar = () => {
             <NavLink
               to="/Pickup&Transfer"
               className={({ isActive }) =>
-                `relative text-black md:text-white hover:underline transition-all duration-300 ${
-                  isActive ? "underline" : ""
-                } py-2 md:py-0`
+                `Navlink relative ${isActive ? "underline" : ""} py-2 md:py-0`
               }
               onClick={() => setIsOpen(false)}>
               Pickup/Transfer
@@ -85,25 +85,21 @@ const Navbar = () => {
             <NavLink
               to="/Activities"
               className={({ isActive }) =>
-                `relative text-black md:text-white hover:underline transition-all duration-300 ${
-                  isActive ? "underline" : ""
-                } py-2 md:py-0`
+                `Navlink relative ${isActive ? "underline" : ""} py-2 md:py-0`
               }
               onClick={() => setIsOpen(false)}>
               Activities
             </NavLink>
             <a
               href="/#Contact"
-              className="relative text-black md:text-white hover:underline transition-all duration-300 py-2 md:py-0"
+              className="Navlink relative py-2 md:py-0"
               onClick={() => setIsOpen(false)}>
               Contact
             </a>
             <NavLink
               to="/Contact"
               className={({ isActive }) =>
-                `relative text-black md:text-white hover:underline transition-all duration-300 ${
-                  isActive ? "underline" : ""
-                } py-2 md:py-0`
+                `Navlink relative ${isActive ? "underline" : ""} py-2 md:py-0`
               }
               onClick={() => setIsOpen(false)}>
               Review
