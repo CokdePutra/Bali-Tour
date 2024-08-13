@@ -19,7 +19,7 @@ const Home = () => {
           <h2 className="Title mt-16 text-center text-4xl font-bold">
             POPULAR DESTINATION
           </h2>
-          <div className="grid gap-6 mt-8 md:grid-cols-2 m-10">
+          <div className="grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 m-10">
             <Card
               src="./images/NJ_BubbleGum_18.jpg"
               title="Kecak Dance Uluwatu"
