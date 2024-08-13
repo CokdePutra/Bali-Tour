@@ -5,7 +5,7 @@
     @apply text-3xl md:text-5xl font-bold poppins-bold m-4;
   }
   .Title-card {
-    @apply text-xl md:text-2xl font-bold poppins-bold m-3;
+    @apply text-2xl md:text-2xl font-bold poppins-bold m-3;
   }
   .Navlink {
     @apply text-black md:text-white hover:underline transition-all duration-300;
