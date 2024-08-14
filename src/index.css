@@ -2,7 +2,7 @@
 @tailwind components;
 @layer components {
   .Title {
-    @apply text-3xl md:text-5xl font-bold poppins-bold m-4;
+    @apply text-3xl md:text-5xl text-center font-bold poppins-bold m-4;
   }
   .Title-card {
     @apply text-2xl md:text-2xl font-bold poppins-bold m-3;
