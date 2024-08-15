@@ -10,6 +10,9 @@
   .Navlink {
     @apply text-black md:text-white hover:underline transition-all duration-300;
   }
+  .Desc {
+    @apply text-lg md:text-xl poppins-regular my-3;
+  }
 }
 
 @tailwind utilities;

@@ -12,7 +12,7 @@ const Hero = ({ backgroundImage, title, desc }) => {
       <div className="absolute inset-0 bg-black opacity-30"></div>
       <div className="relative z-10 text-center text-white p-6">
         <h1 className="Title">{title}</h1>
-        <p className="text-lg md:text-xl poppins-regular my-3">{desc}</p>
+        <p className="Desc">{desc}</p>
       </div>
     </div>
   );
