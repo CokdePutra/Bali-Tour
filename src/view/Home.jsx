@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Card from "../components/Card/Card";
 import ButtonMessage from "../components/Button/ButtonMessage";
+import Footer from "../components/Footer/Footer";
 // import Loader from "../components/Loader";
 // import { CardMostPopular } from "../constants/constants";
 // import { ActivitiesData } from "../api"; // Import the API connection function
@@ -154,6 +155,7 @@ const Home = () => {
         </div>
 
         {/* end section */}
+        <Footer />
       </div>
     </>
   );
