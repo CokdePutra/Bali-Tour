@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { CardAllActivities, HeroImage } from "../constants/constants";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Card from "../components/Card/Card";
-import { CardAllActivities, HeroImage } from "../constants/constants";
+import ButtonMessage from "../components/Button/ButtonMessage";
 // import Loader from "../components/Loader";
 // import { CardMostPopular } from "../constants/constants";
 // import { ActivitiesData } from "../api"; // Import the API connection function
@@ -22,16 +23,18 @@ const Home = () => {
           desc="Your Journey to Paradise Begins Here!"
         />
 
+        {/* section Popular */}
         <div className="popular-destination mt-16 m-5">
-          <h1 className="Title text-4xl">POPULAR DESTINATION</h1>
+          <h1 className="TitleSection">POPULAR DESTINATION</h1>
           <div className="grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 m-10">
             <Card CardValue={popularActivities} />
           </div>
           {/* <ButtonBook textButton="Discover More" /> */}
         </div>
 
-        <div className="about-us mt-16 m-5">
-          <h1 className="Title text-4xl">About Us</h1>
+        {/* section About Us */}
+        <div className="about-us mt-16 m-5 min-h-lvh place-content-center">
+          <h1 className="TitleSection">About Us</h1>
           <div className="w-full lg:flex gap-3 mt-10">
             <div className="left lg:w-1/2 m-4 flex justify-center">
               <img
@@ -61,10 +64,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="choose-us mt-16 m-5">
-          <h1 className="Title text-4xl">Why Choose Us</h1>
-          <div className="content m-4 content-center md:flex md:flex-wrap gap-[2rem]">
-            <div className="reason">
+        {/* section Choose Us */}
+        <div className="choose-us mt-16 m-5 place-content-center">
+          <h1 className="TitleSection">Why Choose Us</h1>
+          <div className="content m-4 content-center justify-center md:flex md:flex-wrap gap-[2rem]">
+            <div className="reason md:w-[22rem] lg:w-[30rem]">
               <h2 className="Title text-2xl mt-10">Experienced Drivers</h2>
               <p className="Desc text-justify">
                 All of our drivers are English speaking and are from the area.
@@ -73,7 +77,7 @@ const Home = () => {
                 professional guide is available upon request at an extra charge.
               </p>
             </div>
-            <div className="reason">
+            <div className="reason md:w-[22rem] lg:w-[30rem]">
               <h2 className="Title text-2xl mt-10">100% Kids Friendly</h2>
               <p className="Desc text-justify">
                 Myeslf and several of my drivers have kids as well. Kids play a
@@ -82,7 +86,7 @@ const Home = () => {
                 with us on tour.
               </p>
             </div>
-            <div className="reason">
+            <div className="reason md:w-[22rem] lg:w-[30rem]">
               <h2 className="Title text-2xl mt-10">Independent</h2>
               <p className="Desc text-justify">
                 All of our drivers are English speaking and are from the area.
@@ -91,7 +95,7 @@ const Home = () => {
                 professional guide is available upon request at an extra charge.
               </p>
             </div>
-            <div className="reason">
+            <div className="reason md:w-[22rem] lg:w-[30rem]">
               <h2 className="Title text-2xl mt-10">Lots of Positive Reviews</h2>
               <p className="Desc text-justify">
                 Myeslf and several of my drivers have kids as well. Kids play a
@@ -102,6 +106,54 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        {/* section Contact Us */}
+        <div className="contact-us mt-16 m-5 place-content-center">
+          <h1 className="TitleSection">Contact Us</h1>
+          <div className="content mx-8 p-4 flex flex-wrap justify-center">
+            <div className="inner bg-white shadow-lg p-8 rounded-lg w-full md:w-4/5">
+              <div className="formField">
+                <div className="formContact mb-4">
+                  <label htmlFor="ContactName" className="Label">
+                    Name
+                  </label>
+                  <input
+                    id="ContactName"
+                    required
+                    type="text"
+                    className="h-10 w-full rounded-lg p-2 border-2 border-gray-300"
+                  />
+                </div>
+                <div className="formContact mb-4">
+                  <label htmlFor="ContactEmail" className="Label">
+                    Email
+                  </label>
+                  <input
+                    id="ContactEmail"
+                    required
+                    type="email"
+                    className="h-10 w-full rounded-lg p-2 border-2 border-gray-300"
+                  />
+                </div>
+                <div className="formContact mb-4">
+                  <label htmlFor="ContactMessage" className="Label">
+                    Your Message
+                  </label>
+                  <textarea
+                    name="ContactMessage"
+                    id="ContactMessage"
+                    className="min-h-[10rem] w-full rounded-lg p-2 border-2 border-gray-300"></textarea>
+                </div>
+                <ButtonMessage
+                  className="float-right mt-4 mb-2"
+                  textButton="Send"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* end section */}
       </div>
     </>
   );

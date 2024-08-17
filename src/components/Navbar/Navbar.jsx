@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className="relative md:relative w-full bg-transparent z-50 poppins-regular">
+      className="relative w-full bg-transparent z-50 poppins-regular">
       <div className="flex justify-between items-center p-4 mx-[2rem]">
         {/* Desktop Title */}
         <div className="text-white poppins-bold text-3xl lg:block hidden">
@@ -64,7 +64,7 @@ const Navbar = () => {
               ? "top-0 -z-10 absolute block shadow-lg md:shadow-none"
               : "hidden"
           }`}>
-          <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mt-4 md:mt-0">
+          <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mt-16 md:mt-0">
             <NavLink
               end
               to="/"

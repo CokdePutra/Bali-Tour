@@ -28,7 +28,7 @@ export const CardAllActivities = [
     price: "1.000.000",
     image: "./images/hero_image1.png",
     desc: "testing",
-    popular: false,
+    popular: true,
     id: 3,
   },
   {
@@ -36,7 +36,7 @@ export const CardAllActivities = [
     price: "500.000",
     image: "./images/hero_image1.png",
     desc: "testing",
-    popular: false,
+    popular: true,
     id: 4,
   },
   {
