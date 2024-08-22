@@ -63,6 +63,14 @@ export const CardAllActivities = [
     popular: true,
     id: 7,
   },
+  {
+    title: "Balinese Babi Guling",
+    price: "1.000.000",
+    image: "./images/hero_image1.png",
+    desc: "testing",
+    popular: false,
+    id: 8,
+  },
 ];
 
 export const HeroImage = {
