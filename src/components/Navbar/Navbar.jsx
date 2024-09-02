@@ -75,7 +75,7 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              to="/Pickup&Transfer"
+              to="/PickupTransfer"
               className={({ isActive }) =>
                 `Navlink relative ${isActive ? "underline" : ""} py-2 md:py-0`
               }
@@ -93,11 +93,16 @@ const Navbar = () => {
             <a
               href="/#Contact"
               className="Navlink relative py-2 md:py-0"
-              onClick={() => setIsOpen(false)}>
+              onClick={() => {
+                setIsOpen(false);
+                document
+                  .getElementById("Contact")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}>
               Contact
             </a>
             <NavLink
-              to="/Contact"
+              to="/Review"
               className={({ isActive }) =>
                 `Navlink relative ${isActive ? "underline" : ""} py-2 md:py-0`
               }

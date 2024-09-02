@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./view/Home";
+import Pickup from "./view/PickupTransfer";
 import Activities from "./view/Activities";
 import Detail from "./view/Detail";
 // import NotFound from "./view/NotFound"; // Make sure to create this component
@@ -11,6 +12,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/PickupTransfer" element={<Pickup />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/activities/:id" element={<Detail />} />
           {/* <Route path="*" element={<NotFound />} />{" "} */}

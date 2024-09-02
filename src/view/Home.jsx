@@ -3,8 +3,8 @@ import { CardAllActivities, HeroImage } from "../constants/constants";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Card from "../components/Card/Card";
-import ButtonMessage from "../components/Button/ButtonMessage";
 import Footer from "../components/Footer/Footer";
+import Contact from "../components/Forms/Contact";
 // import Loader from "../components/Loader";
 // import { CardMostPopular } from "../constants/constants";
 // import { ActivitiesData } from "../api"; // Import the API connection function
@@ -109,50 +109,7 @@ const Home = () => {
         </div>
 
         {/* section Contact Us */}
-        <div className="contact-us mt-16 m-5 place-content-center">
-          <h1 className="TitleSection">Contact Us</h1>
-          <div className="content mx-8 p-4 flex flex-wrap justify-center">
-            <div className="inner bg-white shadow-lg p-8 rounded-lg w-full md:w-4/5">
-              <div className="formField">
-                <div className="formContact mb-4">
-                  <label htmlFor="ContactName" className="Label">
-                    Name
-                  </label>
-                  <input
-                    id="ContactName"
-                    required
-                    type="text"
-                    className="h-10 w-full rounded-lg p-2 border-2 border-gray-300"
-                  />
-                </div>
-                <div className="formContact mb-4">
-                  <label htmlFor="ContactEmail" className="Label">
-                    Email
-                  </label>
-                  <input
-                    id="ContactEmail"
-                    required
-                    type="email"
-                    className="h-10 w-full rounded-lg p-2 border-2 border-gray-300"
-                  />
-                </div>
-                <div className="formContact mb-4">
-                  <label htmlFor="ContactMessage" className="Label">
-                    Your Message
-                  </label>
-                  <textarea
-                    name="ContactMessage"
-                    id="ContactMessage"
-                    className="min-h-[10rem] w-full rounded-lg p-2 border-2 border-gray-300"></textarea>
-                </div>
-                <ButtonMessage
-                  className="float-right mt-4 mb-2"
-                  textButton="Send"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Contact />
 
         {/* end section */}
         <Footer />

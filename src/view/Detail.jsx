@@ -22,7 +22,7 @@ const Detail = () => {
     <div className="activity-detail p-4">
       <h1 className="text-3xl font-bold mb-4">{activity.title}</h1>
       <img
-        src={activity.image}
+        src={"/" + activity.image}
         alt={activity.title}
         className="w-full h-auto mb-4"
       />

@@ -14,7 +14,7 @@ const Footer = () => {
     <>
       <footer className="bg-primary-color mt-16 w-full text-left">
         <div className="container-footer w-full mx-auto flex flex-col md:flex-row justify-between gap-12 p-10 bg-primary">
-          <div className="section" data-aos="fade-up">
+          <div className="section my-3" data-aos="fade-up">
             <h2 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
               BAGUS BALI TOUR & TRANSPORT
             </h2>
@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="section" data-aos="fade-up">
+          <div className="section my-3" data-aos="fade-up">
             <h2 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
               Our Services
             </h2>
@@ -61,7 +61,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="section]" data-aos="fade-up">
+          <div className="section my-3" data-aos="fade-up">
             <h2 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
               Book Your Trip Now!
             </h2>
