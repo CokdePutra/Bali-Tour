@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center p-4 mx-[2rem]">
         {/* Desktop Title */}
         <div className="text-white poppins-bold text-3xl lg:block hidden">
-          BAGUS BALI TOUR & TRANSPORT
+          <NavLink to="/">BAGUS BALI TOUR & TRANSPORT</NavLink>
         </div>
 
         {/* Mobile Menu Button */}

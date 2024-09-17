@@ -2,15 +2,15 @@ export const CardAllActivities = [
   {
     title: "Kecak Dance Uluwatu",
     price: "500.000",
-    image: "./images/hero_image1.png",
-    desc: "testing",
+    image: "./images/kecak_dance.jpg",
+    desc: "Enjoy white water rafting and explore the unique traditions of Bali in Ubud. The white water rafting will give you an unforgettable journey to the lush green jungles along the Ayung River. The Ayung River is located on the outskirt of Ubud. It is the most famous and popular river for white water rafting on Bali and is considered a “must do” activity when visiting the island of the Gods.The trip will begin with a walk through beautiful rice terraces through a green valley and down to the starting point of the white water rafting by the river. See wild monkey hang on the branch of trees and hear the birds singing in this peaceful are around the river. You will see stone carvings on the cliffs of the river, a hidden waterfall, and beautiful gardens by the luxury villas on the rivers edge. Enjoy an incredible and fun rafting experience and feel the sensation of conquering the rapids with family and friends. After the exhilarating experience you can shower and freshen up in the amenities area and change into dry clothes.Following this adventure, we will continue to Ubud to explore some of the best that this central community has to offer. The traditional market to give you a chance to explore all it has to offer and the Ubud palace, officially Puri Saren Agung, that served as the official residence of the royal family of Ubud.",
     popular: true,
     id: 0,
   },
   {
     title: "Kintamani Tour",
     price: "1.000.000.000",
-    image: "./images/hero_image1.png",
+    image: "./images/kintamani.jpg",
     desc: "testing",
     popular: false,
     id: 1,
@@ -18,7 +18,7 @@ export const CardAllActivities = [
   {
     title: "Rafting + Ubud Tour",
     price: "2.000.000",
-    image: "./images/hero_image1.png",
+    image: "./images/rafting.jpg",
     desc: "testing",
     popular: false,
     id: 2,
@@ -26,7 +26,7 @@ export const CardAllActivities = [
   {
     title: "Balinese Food Culinary",
     price: "1.000.000",
-    image: "./images/hero_image1.png",
+    image: "./images/balinese_food.jpg",
     desc: "testing",
     popular: true,
     id: 3,
