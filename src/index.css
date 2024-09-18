@@ -1,5 +1,27 @@
 @tailwind base;
 @tailwind components;
+@layer components {
+  /* Text */
+  .Title {
+    @apply text-3xl md:text-5xl text-center font-bold poppins-bold m-4;
+  }
+  .TitleSection {
+    @apply text-4xl md:text-4xl text-center font-bold poppins-bold m-4;
+  }
+  .Title-card {
+    @apply text-2xl md:text-2xl font-bold poppins-bold m-3;
+  }
+  .Navlink {
+    @apply text-black md:text-white hover:underline transition-all duration-300;
+  }
+  .Desc {
+    @apply text-lg md:text-xl poppins-regular my-3;
+  }
+  .Label {
+    @apply block mb-2 text-sm font-medium text-left text-gray-700;
+  }
+}
+
 @tailwind utilities;
 
 .poppins-thin {
