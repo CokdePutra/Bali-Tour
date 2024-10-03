@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
@@ -10,10 +10,23 @@ const Activities = () => {
   const initialActivitiesToShow = 6; // Number of activities to show initially
   const additionalActivitiesToShow = 6; // Number of activities to load when "See More" is clicked
 
+  // Load saved visible activities from localStorage, or show the initial activities if none are saved
+  const savedActivities =
+    JSON.parse(localStorage.getItem("visibleActivities")) || [];
   const [visibleActivities, setVisibleActivities] = useState(
-    CardAllActivities.slice(0, initialActivitiesToShow)
+    savedActivities.length > 0
+      ? savedActivities
+      : CardAllActivities.slice(0, initialActivitiesToShow)
   );
   const [loading, setLoading] = useState(false);
+
+  // Save visible activities to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem(
+      "visibleActivities",
+      JSON.stringify(visibleActivities)
+    );
+  }, [visibleActivities]);
 
   const handleSeeMore = () => {
     setLoading(true);
