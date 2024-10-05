@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CardAllActivities, HeroImage } from "../constants/constants";
+import { NavLink } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Card from "../components/Card/Card";
@@ -30,11 +31,11 @@ const Home = () => {
           <div className="grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 m-10">
             <Card CardValue={popularActivities} />
           </div>
-          <Link
+          <NavLink
             to="/Activities"
             className="mx-auto my-8 block poppins-semibold text-black py-2 px-4">
             Discover More..
-          </Link>
+          </NavLink>
           {/* <ButtonBook textButton="Discover More" /> */}
         </div>
 
