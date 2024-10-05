@@ -21,11 +21,11 @@ const Detail = () => {
 
   return (
     <>
-      <div className="content w-full max-w-xs h-auto bg-white rounded-[30px] shadow-lg flex flex-col items-center mx-auto my-[3rem] py-[2rem] lg:max-w-auto drop-shadow-2xl">
+      <div className="content w-full max-w-xs md:max-w-xl h-auto bg-white rounded-[30px] shadow-lg flex flex-col items-center mx-auto my-[3rem] pb-[2rem] lg:max-w-auto drop-shadow-2xl">
         <img
           src={"/" + activity.image}
           alt={activity.title}
-          className="w-full h-auto mb-4 rounded-[30px]"
+          className="w-full h-auto md:h-[25rem] mb-4 rounded-[30px] object-cover"
         />
         <h1 className="w-4/5 text-3xl font-bold mb-4">{activity.title}</h1>
         <div className="w-4/5 m-5">
@@ -34,7 +34,7 @@ const Detail = () => {
             {activity.desc}
           </p>
         </div>
-        <div className="w-4/5 mx-[1rem]">
+        <div className="w-3/5 mx-[1rem]">
           <p className="text-2xl font-bold mb-2">Prices</p>
           <p className="text-xl font-semibold">
             Price start from IDR .{activity.price}{" "}
