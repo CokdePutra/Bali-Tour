@@ -21,7 +21,7 @@ const Card = ({ CardValue }) => {
               IDR {price}
             </p>
             <Link to={`/activities/${id}`}>
-              <ButtonBook textButton="More" className="float-right mb-5 mr-5" />
+              {/* <ButtonBook textButton="More" className="float-right mb-5 mr-5" /> */}
             </Link>
           </div>
         </div>
