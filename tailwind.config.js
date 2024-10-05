@@ -12,6 +12,7 @@ module.exports = {
         "color-title": "#3c3c3c",
         "footer-text": "#d6d6d6",
         "background-color": "#ffffff",
+        // "link-color": "#0000EE",
       },
     },
   },
