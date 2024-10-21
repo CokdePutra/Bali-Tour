@@ -27,7 +27,7 @@ const Navbar = () => {
   // onscroll script
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100); // Set threshold for scrolling
+      setIsScrolled(window.scrollY > 1); // Set threshold for scrolling
     };
 
     window.addEventListener("scroll", handleScroll);
