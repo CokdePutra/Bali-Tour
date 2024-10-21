@@ -4,6 +4,7 @@ import ButtonBook from "../Button/ButtonBook";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // New state for scroll detection
   const navbarRef = useRef(null);
 
   const toggleMenu = () => {
@@ -23,13 +24,30 @@ const Navbar = () => {
     };
   }, []);
 
+  // onscroll script
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 700); // Set threshold for scrolling
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <nav
       ref={navbarRef}
-      className="relative w-full bg-transparent z-50 poppins-regular">
+      className={`w-full sticky top-0 z-50 poppins-regular ${
+        isScrolled ? "bg-white" : "bg-transparent"
+      } transition-colors duration-300`}>
       <div className="flex justify-between items-center p-4 mx-[2rem]">
         {/* Desktop Title */}
-        <div className="text-white poppins-bold text-3xl lg:block hidden">
+        <div
+          className={`${
+            isScrolled ? "text-black" : "text-white"
+          } poppins-bold text-3xl lg:block hidden`}>
           <NavLink to="/">BAGUS BALI TOUR & TRANSPORT</NavLink>
         </div>
 
@@ -59,12 +77,10 @@ const Navbar = () => {
 
         {/* Nav Links */}
         <div
-          className={`absolute poppins-bold left-0 w-full md:static md:flex md:items-center md:justify-center md:w-auto bg-white md:bg-transparent transition-all duration-300 ease-in-out ${
-            isOpen
-              ? "top-0 -z-10 absolute block shadow-lg md:shadow-none"
-              : "hidden"
-          }`}>
-          <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mt-16 md:mt-0">
+          className={`absolute poppins-bold left-0 w-full md:static md:flex md:items-center md:justify-center md:w-auto ${
+            isOpen ? "bg-white md:bg-transparent" : "hidden"
+          } transition-all duration-300 ease-in-out`}>
+          <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mt-40 md:mt-0">
             <NavLink
               end
               to="/"
