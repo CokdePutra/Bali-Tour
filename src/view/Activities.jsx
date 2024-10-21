@@ -50,6 +50,13 @@ const Activities = () => {
       <Navbar />
       <Hero backgroundImage={HeroImage.Activities} title="Activities" />
       <h1 className="Title mt-[3rem] md:my-[4rem]">Our Best Activities</h1>
+
+      {/* fitur baru belum selesai */}
+      <div className="dropDown">
+        <button type="button">Most Popular</button>
+      </div>
+      {/* end fitur */}
+
       <div className="flex-col grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 m-10">
         <Card CardValue={visibleActivities} />
       </div>
