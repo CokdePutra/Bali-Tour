@@ -27,7 +27,7 @@ const Navbar = () => {
   // onscroll script
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 700); // Set threshold for scrolling
+      setIsScrolled(window.scrollY > 1); // Set threshold for scrolling
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -47,7 +47,7 @@ const Navbar = () => {
         <div
           className={`${
             isScrolled ? "text-black" : "text-white"
-          } poppins-bold text-3xl lg:block hidden`}>
+          } poppins-bold text-l md:hidden lg:block lg:text-3xl`}>
           <NavLink to="/">BAGUS BALI TOUR & TRANSPORT</NavLink>
         </div>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
               isOpen ? "text-black" : "text-white"
             }`}>
             <svg
-              className="w-6 h-6"
+              className={`w-6 h-6 ${isScrolled ? "text-black" : "text-white"}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -85,7 +85,9 @@ const Navbar = () => {
               end
               to="/"
               className={({ isActive }) =>
-                `Navlink relative ${isActive ? "underline" : ""} py-2 md:py-0`
+                `Navlink relative ${
+                  isScrolled ? "text-black" : "text-black md:text-white"
+                } ${isActive ? "underline" : ""} py-2 md:py-0`
               }
               onClick={() => setIsOpen(false)}>
               Home
@@ -93,7 +95,9 @@ const Navbar = () => {
             <NavLink
               to="/PickupTransfer"
               className={({ isActive }) =>
-                `Navlink relative ${isActive ? "underline" : ""} py-2 md:py-0`
+                `Navlink relative ${
+                  isScrolled ? "text-black" : "text-black md:text-white"
+                } ${isActive ? "underline" : ""} py-2 md:py-0`
               }
               onClick={() => setIsOpen(false)}>
               Pickup/Transfer
@@ -101,14 +105,18 @@ const Navbar = () => {
             <NavLink
               to="/Activities"
               className={({ isActive }) =>
-                `Navlink relative ${isActive ? "underline" : ""} py-2 md:py-0`
+                `Navlink relative ${
+                  isScrolled ? "text-black" : "text-black md:text-white"
+                } ${isActive ? "underline" : ""} py-2 md:py-0`
               }
               onClick={() => setIsOpen(false)}>
               Activities
             </NavLink>
             <a
               href="/#Contact"
-              className="Navlink relative py-2 md:py-0"
+              className={`Navlink relative py-2 md:py-0 ${
+                isScrolled ? "text-black" : "text-black md:text-white"
+              }`}
               onClick={() => {
                 setIsOpen(false);
                 document
@@ -120,7 +128,9 @@ const Navbar = () => {
             <NavLink
               to="/Review"
               className={({ isActive }) =>
-                `Navlink relative ${isActive ? "underline" : ""} py-2 md:py-0`
+                `Navlink relative ${
+                  isScrolled ? "text-black" : "text-black md:text-white"
+                } ${isActive ? "underline" : ""} py-2 md:py-0`
               }
               onClick={() => setIsOpen(false)}>
               Review
