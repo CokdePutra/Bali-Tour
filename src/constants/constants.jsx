@@ -10,7 +10,7 @@ export const CardAllActivities = [
   {
     title: "Ubud Half Day Trip",
     price: "500.000",
-    image: "./images/ubud_pic.jpg",
+    image: "./images/kintamani.jpg",
     desc: "testing",
     popular: true,
     id: 1,

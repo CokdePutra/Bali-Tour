@@ -19,6 +19,14 @@ const Detail = () => {
 
   if (!activity) return <Loader />; // Show Loader while loading
 
+  // Generate WhatsApp link with a message
+  const createWhatsAppLink = () => {
+    const phoneNumber = "6281239199662"; // Replace with the actual WhatsApp number
+    const message = `Hello, I'm interested in booking ${activity.title} starting from IDR ${activity.price} per person.`;
+    const encodedMessage = encodeURIComponent(message);
+    return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  };
+
   return (
     <>
       <div className="content w-full max-w-xs md:max-w-xl h-auto bg-white rounded-[30px] shadow-lg flex flex-col items-center mx-auto my-[3rem] pb-[2rem] lg:max-w-auto drop-shadow-2xl">
@@ -37,7 +45,7 @@ const Detail = () => {
         <div className="w-3/5 mx-[1rem]">
           <p className="text-2xl font-bold mb-2">Prices</p>
           <p className="text-xl font-semibold">
-            Price start from IDR .{activity.price}{" "}
+            Price start from IDR {activity.price}{" "}
             <span className="font-normal">per person</span>
           </p>
         </div>
@@ -54,8 +62,11 @@ const Detail = () => {
             </a>
           </div>
           <div className="w-full py-5 flex justify-end">
-            {/* <ButtonBook textButton="Back" className="left-0" /> */}
-            <ButtonBook textButton="Book" className="left-0" />
+            <ButtonBook
+              textButton="Book"
+              className="left-0"
+              onClick={() => window.open(createWhatsAppLink(), "_blank")}
+            />
           </div>
         </div>
       </div>

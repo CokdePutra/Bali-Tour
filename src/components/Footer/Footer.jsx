@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonBook from "../Button/ButtonBook";
 import {
   BiLogoWhatsapp,
   BiLogoGmail,
@@ -8,6 +9,13 @@ import {
 const iconWA = { color: "#2cd46b", fontSize: "2rem", minWidth: "2rem" };
 const iconEmail = { color: "#eb493b", fontSize: "2rem", minWidth: "2rem" };
 const iconFacebook = { color: "#1f7bf2", fontSize: "2rem", minWidth: "2rem" };
+
+const createWhatsAppLink = () => {
+  const phoneNumber = "6281239199662"; // Replace with the actual WhatsApp number
+  const message = `Hello, I'm interested to the tour`;
+  const encodedMessage = encodeURIComponent(message);
+  return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+};
 
 const Footer = () => {
   return (
@@ -68,9 +76,11 @@ const Footer = () => {
             <h3 className="text-footer-text text-lg mt-2 mb-2">
               Let us know your tour needs and we will get in contact with you
             </h3>
-            <button className="button-book-now bg-[#dc834e] text-white py-2 px-4 rounded mt-4">
-              BOOK NOW!
-            </button>
+            <ButtonBook
+              textButton="BOOK NOW"
+              className="text-white md:block hidden"
+              onClick={() => window.open(createWhatsAppLink(), "_blank")}
+            />
           </div>
         </div>
       </footer>
