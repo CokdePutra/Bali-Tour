@@ -40,7 +40,7 @@ const Home = () => {
         </div>
 
         {/* section About Us */}
-        <div className="about-us mt-16 m-5 min-h-lvh place-content-center">
+        <div className="about-us mt-16 m-5 max-h-lvh place-content-center">
           <h1 className="TitleSection">About Us</h1>
           <div className="w-full lg:flex gap-3 mt-10">
             <div className="left lg:w-1/2 m-4 flex justify-center">

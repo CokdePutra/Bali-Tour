@@ -7,7 +7,7 @@ const Hero = ({ backgroundImage, title, desc }) => {
 
   return (
     <div
-      className="relative w-full h-screen bg-fixed bg-cover bg-center overflow-hidden flex items-center justify-center poppins-medium -mt-[82px]"
+      className="relative w-full h-lvh bg-fixed bg-cover bg-center overflow-hidden flex items-center justify-center poppins-medium -mt-[82px]"
       style={sectionStyle}>
       <div className="absolute inset-0 bg-black opacity-30"></div>
       <div className="relative z-10 text-center text-white p-6">

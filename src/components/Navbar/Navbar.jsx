@@ -54,7 +54,7 @@ const Navbar = () => {
         <div
           className={`${
             isScrolled ? "text-black" : "text-white"
-          } poppins-bold text-l md:hidden lg:block lg:text-3xl`}>
+          } poppins-bold text-sm md:hidden lg:block lg:text-3xl`}>
           <NavLink to="/">BAGUS BALI TOUR & TRANSPORT</NavLink>
         </div>
 
