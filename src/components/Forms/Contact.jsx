@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <div id="Contact" className="contact-us mt-16 m-5 place-content-center">
-      <h1 className="TitleSection">Contact Us</h1>
+      <h2 className="TitleSection">Contact Us</h2>
       <div className="content mx-8 p-4 flex flex-wrap justify-center">
         <div className="inner bg-white shadow-lg p-8 rounded-lg w-full md:w-4/5">
           <form className="formField" onSubmit={handleSubmit}>

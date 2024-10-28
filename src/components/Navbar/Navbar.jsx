@@ -43,6 +43,21 @@ const Navbar = () => {
     return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   };
 
+  const toAboutUs = (event) => {
+    event.preventDefault;
+
+    if (window.location.pathname != "/") {
+      Router.push("/");
+    }
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: document.querySelector("about-us").offsetTop - 125,
+        behavior: "smooth",
+      });
+    }, 50);
+  };
+
   return (
     <nav
       ref={navbarRef}
@@ -139,7 +154,7 @@ const Navbar = () => {
                   isScrolled ? "text-black" : "text-black md:text-white"
                 } ${isActive ? "underline" : ""} py-2 md:py-0`
               }
-              onClick={() => setIsOpen(false)}>
+              onClick={(() => setIsOpen(false), toAboutUs)}>
               Review
             </NavLink>
           </div>

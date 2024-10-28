@@ -12,11 +12,12 @@ const Card = ({ CardValue }) => {
           <img
             src={image}
             alt={title}
+            title={title}
             className="w-full h-[13rem] rounded-[30px] relative object-cover"
           />
           <div className="content w-full p-0 md:p-2">
-            <h1 className="Title-card ">{title}</h1>
-            <h3>From</h3>
+            <h3 className="Title-card ">{title}</h3>
+            <p>From</p>
             <p className="poppins-bold my-4 text-2xl text-left w-full px-5">
               IDR {price}
             </p>

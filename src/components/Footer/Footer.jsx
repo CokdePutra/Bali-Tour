@@ -23,12 +23,12 @@ const Footer = () => {
       <footer className="bg-primary-color mt-16 w-full text-left">
         <div className="container-footer w-full mx-auto flex flex-col md:flex-row justify-between gap-12 p-10 bg-primary">
           <div className="section my-3" data-aos="fade-up">
-            <h2 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
+            <h4 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
               BAGUS BALI TOUR & TRANSPORT
-            </h2>
-            <h3 className="text-footer-text text-lg mt-2 mb-2">
+            </h4>
+            <h5 className="text-footer-text text-lg mt-2 mb-2">
               Have any questions? Contact us!
-            </h3>
+            </h5>
             <div className="social-media flex flex-col gap-4">
               <div className="whatsapp flex items-center gap-2">
                 <BiLogoWhatsapp style={iconWA} />
@@ -51,9 +51,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="section my-3" data-aos="fade-up">
-            <h2 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
+            <h4 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
               Our Services
-            </h2>
+            </h4>
             <div className="our-service grid">
               <a href="/" className="text-footer-text text-lg">
                 Pickup
@@ -70,12 +70,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="section my-3" data-aos="fade-up">
-            <h2 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
+            <h4 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
               Book Your Trip Now!
-            </h2>
-            <h3 className="text-footer-text text-lg mt-2 mb-2">
+            </h4>
+            <h5 className="text-footer-text text-lg mt-2 mb-2">
               Let us know your tour needs and we will get in contact with you
-            </h3>
+            </h5>
             <ButtonBook
               textButton="BOOK NOW"
               className="text-white md:block hidden"

@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       <div className="w-full">
-        <Navbar />
+        <Navbar className="bg-gray-800"></Navbar>
 
         <Hero
           backgroundImage={HeroImage.Home}
@@ -27,7 +27,7 @@ const Home = () => {
 
         {/* section Popular */}
         <div className="popular-destination mt-16 m-5">
-          <h1 className="TitleSection">POPULAR DESTINATION</h1>
+          <h2 className="TitleSection">POPULAR DESTINATION</h2>
           <div className="grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 m-10">
             <Card CardValue={popularActivities} />
           </div>
@@ -40,8 +40,8 @@ const Home = () => {
         </div>
 
         {/* section About Us */}
-        <div className="about-us mt-16 m-5 min-h-lvh place-content-center">
-          <h1 className="TitleSection">About Us</h1>
+        <div className="about-us mt-16 m-5 place-content-center flex flex-col">
+          <h2 className="TitleSection">About Us</h2>
           <div className="w-full lg:flex gap-3 mt-10">
             <div className="left lg:w-1/2 m-4 flex justify-center">
               <img
@@ -50,11 +50,11 @@ const Home = () => {
                 className="w-[30rem] h-[25rem] object-cover"
               />
             </div>
-            <div className="right lg:w-1/2 m-4 justify-center">
-              <h2 className="Title text-2xl mt-10">
+            <div className="right lg:w-1/2 m-4 mt-10 justify-center">
+              <h3 className="Title text-2xl mt-10">
                 We Are BAGUS BALI TOUR & TRANSPORT
-              </h2>
-              <p className="Desc text-justify">
+              </h3>
+              <p className="text-justify">
                 Welcome to our presence on the web! My name is Gusti and I am
                 the owner of Bali Driver Private Tour. We are a professional
                 organizer for Bali tour packages and provide English speaking
@@ -73,10 +73,10 @@ const Home = () => {
 
         {/* section Choose Us */}
         <div className="choose-us mt-16 m-5 place-content-center">
-          <h1 className="TitleSection">Why Choose Us</h1>
+          <h2 className="TitleSection">Why Choose Us</h2>
           <div className="content m-4 content-center justify-center md:flex md:flex-wrap gap-[2rem]">
             <div className="reason md:w-[22rem] lg:w-[30rem]">
-              <h2 className="Title text-2xl mt-10">Experienced Drivers</h2>
+              <h3 className="Title text-2xl mt-10">Experienced Drivers</h3>
               <p className="Desc text-justify">
                 All of our drivers are English speaking and are from the area.
                 You will have access to local knowledge and your driver can
@@ -85,7 +85,7 @@ const Home = () => {
               </p>
             </div>
             <div className="reason md:w-[22rem] lg:w-[30rem]">
-              <h2 className="Title text-2xl mt-10">100% Kids Friendly</h2>
+              <h3 className="Title text-2xl mt-10">100% Kids Friendly</h3>
               <p className="Desc text-justify">
                 Myeslf and several of my drivers have kids as well. Kids play a
                 large part in Balinese culture and they are included in social
@@ -94,7 +94,7 @@ const Home = () => {
               </p>
             </div>
             <div className="reason md:w-[22rem] lg:w-[30rem]">
-              <h2 className="Title text-2xl mt-10">Independent</h2>
+              <h3 className="Title text-2xl mt-10">Independent</h3>
               <p className="Desc text-justify">
                 All of our drivers are English speaking and are from the area.
                 You will have access to local knowledge and your driver can
@@ -103,7 +103,7 @@ const Home = () => {
               </p>
             </div>
             <div className="reason md:w-[22rem] lg:w-[30rem]">
-              <h2 className="Title text-2xl mt-10">Lots of Positive Reviews</h2>
+              <h3 className="Title text-2xl mt-10">Lots of Positive Reviews</h3>
               <p className="Desc text-justify">
                 Myeslf and several of my drivers have kids as well. Kids play a
                 large part in Balinese culture and they are included in social
