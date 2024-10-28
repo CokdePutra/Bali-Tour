@@ -10,7 +10,7 @@ export const CardAllActivities = [
   {
     title: "Ubud Half Day Trip",
     price: "500.000",
-    image: "./images/kintamani.jpg",
+    image: "./images/ubud.webp",
     desc: "testing",
     popular: true,
     id: 1,
@@ -26,7 +26,7 @@ export const CardAllActivities = [
   {
     title: "Jimbaran Bay Sunset",
     price: "500.000",
-    image: "./images/balinese_food.jpg",
+    image: "./images/jimbaran_sunset.webp",
     desc: "testing",
     popular: true,
     id: 3,
@@ -34,7 +34,7 @@ export const CardAllActivities = [
   {
     title: "Water Sport Trip",
     price: "1.000.000",
-    image: "./images/hero_image1.png",
+    image: "./images/watersport.webp",
     desc: "testing",
     popular: true,
     id: 4,
@@ -42,7 +42,7 @@ export const CardAllActivities = [
   {
     title: "Nusa Penida Full Day Trip ",
     price: "2.000.000",
-    image: "./images/hero_image1.png",
+    image: "./images/nusapenida_island.webp",
     desc: "testing",
     popular: true,
     id: 5,
@@ -52,7 +52,7 @@ export const CardAllActivities = [
     price: "2.000.000",
     image: "./images/hero_image1.png",
     desc: "testing",
-    popular: true,
+    popular: false,
     id: 6,
   },
   {
