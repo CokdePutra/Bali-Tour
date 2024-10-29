@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./view/Home";
 import Pickup from "./view/PickupTransfer";
@@ -5,8 +6,16 @@ import Activities from "./view/Activities";
 import Detail from "./view/Detail";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration in milliseconds
+      once: true, // Animates only once on scroll
+    });
+  }, []);
   return (
     <Router>
       <ScrollToTop />{" "}

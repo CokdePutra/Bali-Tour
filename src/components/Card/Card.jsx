@@ -7,6 +7,7 @@ const Card = ({ CardValue }) => {
     <>
       {CardValue.map(({ id, title, price, image }) => (
         <div
+          data-aos="zoom-in"
           key={id}
           className="w-full max-w-xs bg-white rounded-[30px] shadow-lg flex flex-col items-center mx-auto mt-8 lg:max-w-md drop-shadow-2xl">
           <img

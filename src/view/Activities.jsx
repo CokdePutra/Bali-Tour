@@ -49,7 +49,9 @@ const Activities = () => {
     <>
       <Navbar />
       <Hero backgroundImage={HeroImage.Activities} title="Activities" />
-      <h2 className="Title mt-[3rem] md:my-[4rem]">Our Best Activities</h2>
+      <h2 className="Title mt-[3rem] md:my-[4rem]" data-aos="fade-up">
+        Our Best Activities
+      </h2>
 
       {/* fitur baru belum selesai */}
       <div className="dropDown">
