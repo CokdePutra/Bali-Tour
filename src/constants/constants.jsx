@@ -79,3 +79,95 @@ export const HeroImage = {
   Activities: "./images/beach_club.jpg",
   Contact: "./images/NJ_BubbleGum_22.jpg",
 };
+
+export const ServiceDetail = [
+  // Airport
+  {
+    name: "Airport Transfer - Seminyak",
+    price: "300.000",
+    id: "0",
+  },
+  {
+    name: "Airport Transfer - Umalas Kerobokan, Canggu",
+    price: "350.000",
+    id: "1",
+  },
+  {
+    name: "Airport Transfer - Pererenan, Uluwatu",
+    price: "400.000",
+    id: "2",
+  },
+  {
+    name: "Airport Transfer - Ubud",
+    price: "500.000",
+    id: "3",
+  },
+  {
+    name: "Airport Transfer - Tabanan",
+    price: "500.000",
+    id: "4",
+  },
+  // Sanur
+  {
+    name: "Sanur - Seminyak, Canggu",
+    price: "350.000",
+    id: "5",
+  },
+  {
+    name: "Sanur - Umalas Kerobokan, Canggu",
+    price: "400.000",
+    id: "6",
+  },
+  {
+    name: "Sanur - Pererenan, Uluwatu",
+    price: "450.000",
+    id: "7",
+  },
+  {
+    name: "Sanur - Ubud",
+    price: "400.000",
+    id: "8",
+  },
+  // Padang Bai
+  {
+    name: "Padang Bai - Seminyak, Canggu",
+    price: "600.000",
+    id: "9",
+  },
+  {
+    name: "Padang Bai - Umalas Kerobokan, Canggu",
+    price: "700.000",
+    id: "10",
+  },
+  {
+    name: "Padang Bai - Pererenan, Uluwatu",
+    price: "750.000",
+    id: "11",
+  },
+  {
+    name: "Padang Bai - Ubud",
+    price: "600.000",
+    id: "12",
+  },
+  // Uluwatu
+  {
+    name: "Uluwatu - Seminyak, Canggu",
+    price: "400.000",
+    id: "13",
+  },
+  {
+    name: "Uluwatu - Umalas Kerobokan, Canggu",
+    price: "450.000",
+    id: "14",
+  },
+  {
+    name: "Uluwatu - Pererenan, Uluwatu",
+    price: "500.000",
+    id: "15",
+  },
+  {
+    name: "Uluwatu - Ubud",
+    price: "600.000",
+    id: "16",
+  },
+];
