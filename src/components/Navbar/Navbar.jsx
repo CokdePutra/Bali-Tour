@@ -146,7 +146,7 @@ const Navbar = () => {
               Contact
             </button>
             <NavLink
-              to="/Review"
+              to="/review"
               className={`Navlink relative py-2 md:py-0 ${
                 isScrolled ? "text-black" : "text-black md:text-white"
               }`}

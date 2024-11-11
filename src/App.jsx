@@ -4,6 +4,7 @@ import Home from "./view/Home";
 import Pickup from "./view/PickupTransfer";
 import Activities from "./view/Activities";
 import Detail from "./view/Detail";
+import Review from "./view/Review";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import "./App.css";
 import AOS from "aos";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/PickupTransfer" element={<Pickup />} />
         <Route path="/activities" element={<Activities />} />
         <Route path="/activities/:id" element={<Detail />} />
+        <Route path="/review" element={<Review />} />
         {/* Uncomment and create the NotFound component to handle undefined routes */}
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
