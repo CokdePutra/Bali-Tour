@@ -20,7 +20,7 @@ const Pickup = () => {
         backgroundImage={HeroImage.PickupTransfer}
         title="Pickup & Transfer"
       />
-      <div className="flex w-auto place-content-center my-10">
+      <div className="md:flex w-auto place-content-center my-10">
         <label
           htmlFor="service-search"
           className="mr-2 font-semibold text-lg text-gray-700">
@@ -31,7 +31,7 @@ const Pickup = () => {
           id="service-search"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="border border-primary-color px-2 py-1 rounded-[4px] "
+          className="border border-primary-color px-2 py-1 rounded-[4px] w-auto"
           placeholder="Where you want to go..."
         />
       </div>

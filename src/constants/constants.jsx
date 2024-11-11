@@ -71,6 +71,23 @@ export const CardAllActivities = [
     popular: false,
     id: 8,
   },
+  // half day full day
+  {
+    title: "Half-day Tour",
+    price: "650.000",
+    image: "./images/hero_image1.png",
+    desc: "5 Hours of Tour / Car",
+    popular: true,
+    id: 9,
+  },
+  {
+    title: "Full-day Tour",
+    price: "800.000",
+    image: "./images/hero_image1.png",
+    desc: "10 Hours of Tour / Car",
+    popular: true,
+    id: 10,
+  },
 ];
 
 export const HeroImage = {

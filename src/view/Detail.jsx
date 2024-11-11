@@ -2,9 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { CardAllActivities } from "../constants/constants"; // Update the path if needed
-import Loader from "../components/utils/Loader"; // Import the Loader component
+import Loader from "../components/utils/Loader";
 import ButtonBook from "../components/Button/ButtonBook";
-import Navbar from "../components/Navbar/Navbar";
 
 const Detail = () => {
   const { id } = useParams(); // Get the ID from the URL
