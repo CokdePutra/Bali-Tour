@@ -67,7 +67,7 @@ export const CardAllActivities = [
     image: "./images/nusapenida_island.webp",
     desc: "testing",
     include: [""],
-    popular: true,
+    popular: false,
     id: 5,
   },
   {
@@ -85,7 +85,7 @@ export const CardAllActivities = [
     image: "./images/hero_image1.png",
     desc: "testing",
     include: [""],
-    popular: true,
+    popular: false,
     id: 7,
   },
   {
