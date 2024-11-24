@@ -68,7 +68,7 @@ const Navbar = () => {
       className={`w-full sticky top-0 z-50 poppins-regular ${
         isScrolled ? "bg-white" : "bg-transparent"
       } transition-colors duration-300`}>
-      <div className="flex justify-between items-center p-4 mx-[2rem]">
+      <div className="flex justify-between items-center p-4 mx-[2rem] mt-[-1.5rem]">
         {/* Desktop Title */}
         <div
           className={`${

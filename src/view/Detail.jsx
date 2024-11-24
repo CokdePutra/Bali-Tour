@@ -38,17 +38,30 @@ const Detail = () => {
         <h1 className="w-4/5 text-3xl font-bold mb-4">{activity.title}</h1>
         <div className="w-4/5 m-5">
           <p className="text-lg font-bold mb-2">Tour Description</p>
-          <p className="text-base text-justify mb-4 mx-[1rem]">
-            {activity.desc}
-          </p>
+          {activity.desc.split("\n").map((line, index) => (
+            <p key={index} className="text-base text-justify mb-4 mx-[1rem]">
+              {line}
+            </p>
+          ))}
         </div>
-        <div className="w-3/5 mx-[1rem]">
+        <div className="w-3/5 my-[1rem]">
+          <p className="text-2xl font-bold mb-2">Include :</p>
+          <ul className="text-left" style={{ listStyleType: "disc" }}>
+            {activity.include.map((item, index) => (
+              <li key={index} className="text-xl">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="w-3/5 my-[1rem]">
           <p className="text-2xl font-bold mb-2">Prices</p>
           <p className="text-xl font-semibold">
             Price start from IDR {activity.price}{" "}
-            <span className="font-normal">per person</span>
+            <span className="font-normal">per car</span>
           </p>
         </div>
+
         {/* Add more details or components as needed */}
         <div className="flex w-4/5 mx-[1rem]">
           <div className="w-full text-left py-5 flex justify-start items-center ">
