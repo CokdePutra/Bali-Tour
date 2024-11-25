@@ -13,6 +13,14 @@ const Pickup = () => {
     service.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  // Generate WhatsApp link with a message
+  const createWhatsAppLink = (service) => {
+    const phoneNumber = "6281337882648"; // Replace with the actual WhatsApp number
+    const message = `Hello, I'm interested in booking ${service.name} starting from IDR ${service.price} per car.`;
+    const encodedMessage = encodeURIComponent(message);
+    return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  };
+
   return (
     <>
       <Navbar />
@@ -54,7 +62,12 @@ const Pickup = () => {
                   Rp {service.price}
                 </td>
                 <td className="border border-gray-300 p-2">
-                  <ButtonBook textButton="Book" />
+                  <ButtonBook
+                    textButton="Book"
+                    onClick={() =>
+                      window.open(createWhatsAppLink(service), "_blank")
+                    }
+                  />
                 </td>
               </tr>
             ))}

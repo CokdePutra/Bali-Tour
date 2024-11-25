@@ -21,8 +21,8 @@ const Detail = () => {
 
   // Generate WhatsApp link with a message
   const createWhatsAppLink = () => {
-    const phoneNumber = "6281239199662"; // Replace with the actual WhatsApp number
-    const message = `Hello, I'm interested in booking ${activity.title} starting from IDR ${activity.price} per person.`;
+    const phoneNumber = "6281337882648"; // Replace with the actual WhatsApp number
+    const message = `Hello, I'm interested in booking ${activity.title} starting from IDR ${activity.price} per Car.`;
     const encodedMessage = encodeURIComponent(message);
     return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   };

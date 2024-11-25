@@ -38,7 +38,7 @@ const Navbar = () => {
   }, []);
 
   const createWhatsAppLink = () => {
-    const phoneNumber = "6281239199662"; // Replace with the actual WhatsApp number
+    const phoneNumber = "6281337882648"; // Replace with the actual WhatsApp number
     const message = `Hello, I'm interested in the tour`;
     const encodedMessage = encodeURIComponent(message);
     return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
