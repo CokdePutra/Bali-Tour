@@ -27,7 +27,9 @@ const Home = () => {
 
         {/* section Popular */}
         <div className="popular-destination mt-16 m-5">
-          <h2 className="TitleSection">POPULAR DESTINATION</h2>
+          <h2 className="TitleSection" data-aos="zoom-in">
+            POPULAR DESTINATION
+          </h2>
           <div className="grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 m-10">
             <Card CardValue={popularActivities} />
           </div>
@@ -41,16 +43,22 @@ const Home = () => {
 
         {/* section About Us */}
         <div className="about-us mt-16 m-5 place-content-center flex flex-col">
-          <h2 className="TitleSection">About Us</h2>
+          <h2 className="TitleSection" data-aos="zoom-in">
+            About Us
+          </h2>
           <div className="w-full lg:flex gap-3 mt-10">
-            <div className="left lg:w-1/2 m-4 flex justify-center">
+            <div
+              className="left lg:w-1/2 m-4 flex justify-center"
+              data-aos="fade-up">
               <img
                 src="./images/hero_image2.png"
                 alt=""
                 className="w-[30rem] h-[25rem] object-cover"
               />
             </div>
-            <div className="right lg:w-1/2 m-4 mt-10 justify-center">
+            <div
+              className="right lg:w-1/2 m-4 mt-10 justify-center"
+              data-aos="fade-up">
               <h3 className="Title text-2xl mt-10">
                 We Are BAGUS BALI TOUR & TRANSPORT
               </h3>
@@ -73,9 +81,13 @@ const Home = () => {
 
         {/* section Choose Us */}
         <div className="choose-us mt-16 m-5 place-content-center">
-          <h2 className="TitleSection">Why Choose Us</h2>
+          <h2 className="TitleSection" data-aos="fade-up">
+            Why Choose Us
+          </h2>
           <div className="content m-4 content-center justify-center md:flex md:flex-wrap gap-[2rem]">
-            <div className="reason md:w-[22rem] lg:w-[30rem]">
+            <div
+              className="reason md:w-[22rem] lg:w-[30rem]"
+              data-aos="fade-up">
               <h3 className="Title text-2xl mt-10">Experienced Drivers</h3>
               <p className="Desc text-justify">
                 All of our drivers are English speaking and are from the area.
@@ -84,7 +96,9 @@ const Home = () => {
                 professional guide is available upon request at an extra charge.
               </p>
             </div>
-            <div className="reason md:w-[22rem] lg:w-[30rem]">
+            <div
+              className="reason md:w-[22rem] lg:w-[30rem]"
+              data-aos="fade-up">
               <h3 className="Title text-2xl mt-10">100% Kids Friendly</h3>
               <p className="Desc text-justify">
                 Myeslf and several of my drivers have kids as well. Kids play a
@@ -93,7 +107,9 @@ const Home = () => {
                 with us on tour.
               </p>
             </div>
-            <div className="reason md:w-[22rem] lg:w-[30rem]">
+            <div
+              className="reason md:w-[22rem] lg:w-[30rem]"
+              data-aos="fade-up">
               <h3 className="Title text-2xl mt-10">Independent</h3>
               <p className="Desc text-justify">
                 All of our drivers are English speaking and are from the area.
@@ -102,7 +118,9 @@ const Home = () => {
                 professional guide is available upon request at an extra charge.
               </p>
             </div>
-            <div className="reason md:w-[22rem] lg:w-[30rem]">
+            <div
+              className="reason md:w-[22rem] lg:w-[30rem]"
+              data-aos="fade-up">
               <h3 className="Title text-2xl mt-10">Lots of Positive Reviews</h3>
               <p className="Desc text-justify">
                 Myeslf and several of my drivers have kids as well. Kids play a

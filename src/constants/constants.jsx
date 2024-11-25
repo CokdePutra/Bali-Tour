@@ -1,17 +1,31 @@
 export const CardAllActivities = [
   {
     title: "Uluwatu Temple and Kecak Fire Dance",
-    price: "500.000",
+    price: "450.000",
     image: "./images/kecak_dance.jpg",
-    desc: "Enjoy white water rafting and explore the unique traditions of Bali in Ubud. The white water rafting will give you an unforgettable journey to the lush green jungles along the Ayung River. The Ayung River is located on the outskirt of Ubud. It is the most famous and popular river for white water rafting on Bali and is considered a “must do” activity when visiting the island of the Gods.The trip will begin with a walk through beautiful rice terraces through a green valley and down to the starting point of the white water rafting by the river. See wild monkey hang on the branch of trees and hear the birds singing in this peaceful are around the river. You will see stone carvings on the cliffs of the river, a hidden waterfall, and beautiful gardens by the luxury villas on the rivers edge. Enjoy an incredible and fun rafting experience and feel the sensation of conquering the rapids with family and friends. After the exhilarating experience you can shower and freshen up in the amenities area and change into dry clothes.Following this adventure, we will continue to Ubud to explore some of the best that this central community has to offer. The traditional market to give you a chance to explore all it has to offer and the Ubud palace, officially Puri Saren Agung, that served as the official residence of the royal family of Ubud.",
+    desc: "Get whisked away on this evening tour of Uluwatu. Prepare yourself for jaw-dropping sunset views on the cliffs. At 70 meters above sea level, Uluwatu Temple is a must-see for history and architecture lovers. Learn about the how the site is considered one of the six key temples in Bali and a spiritual pillar of the island. Your local guide will teach you about its historical and religious significance. Wander the grounds and snap photos of the temple’s scenic surroundings. Before leaving the sacred temple site, head to the open-air amphitheater to catch the Kecak and Fire Dance. The well-loved cultural performance revolves around traditional Balinese song, dance, and storytelling accompanied by a choir. Watch talented performers with the majestic sunset as the backdrop. ",
+    include: [
+      "Transportation by provate car",
+      "Fuel",
+      "Air Conditoned Vehicle",
+      "Hotel pick up and drop off ",
+      "5 Hours Trip",
+    ],
     popular: true,
     id: 0,
   },
   {
-    title: "Ubud Half Day Trip",
-    price: "500.000",
+    title: "Ubud, Tegallang Rice Terrace & Photos",
+    price: "550.000",
     image: "./images/ubud.webp",
-    desc: "testing",
+    desc: "Whether you're a passionate photographer or just someone who loves nature and adventure, be captivated by the breathtaking beauty of Bali's Tegallalang Rice Terrace. Discover every corner of the rice terraces and allow your guide to assist you with snapping photos in front of this breathtaking backdrop.\n\nLearn about the famous Subak irrigation system, dating back to the 9th century, which embodies the Tri Hita Karana life philosophy. Be escorted to the jungle swing and get the best views of the rice terrace from up above. Don’t forget to take a photo at the iconic (I Love Bali) sign. \n\n Make the most of your experience by purchasing incredible add-ons, such as lunch at a local restaurant and Luwak coffee tasting.",
+    include: [
+      "Transportation by provate car",
+      "Fuel",
+      "Air Conditioned vehicle",
+      "Hotel pick up and drop off",
+      "6 Hours Trip",
+    ],
     popular: true,
     id: 1,
   },
@@ -20,14 +34,21 @@ export const CardAllActivities = [
     price: "1.000.000",
     image: "./images/rafting.jpg",
     desc: "testing",
+    include: [""],
     popular: false,
     id: 2,
   },
   {
-    title: "Jimbaran Bay Sunset",
-    price: "500.000",
+    title: "Bali Sunset : Uluwatu Temple, Kecak Dance & Jimbaran Bay ",
+    price: "450.000",
     image: "./images/jimbaran_sunset.webp",
-    desc: "testing",
+    desc: "Experience the best sundown spot in Bali on a visit to Uluwatu Temple, a Balinese temple to the sea gods with a commanding view of the Indian Ocean. Part of a series of temples built to protect the island from evil spirits, today its cliffside location is home to a family of friendly monkeys. \n\n Once night falls and you have seen the colors of the sunset, experience one of the island's most famous cultural performances at a 'kecak' fire dance. Watch the locals act out a scene from the Ramayana with a mesmerizing trance chant, exciting performances of fire dances, and intricate costumes. \n\n Then, get the option to enjoy dinner at a seafood restaurant serving delicious barbecue food in Jimbaran Bay. Sink your feet in the sand as you dine and relax at the end of an unforgettable day!",
+    include: [
+      "Hotel pick up and drop off",
+      "Air Conditioned Vehicle",
+      "Fuel ",
+      "Bottled mineral water",
+    ],
     popular: true,
     id: 3,
   },
@@ -36,6 +57,7 @@ export const CardAllActivities = [
     price: "1.000.000",
     image: "./images/watersport.webp",
     desc: "testing",
+    include: [""],
     popular: true,
     id: 4,
   },
@@ -44,7 +66,8 @@ export const CardAllActivities = [
     price: "2.000.000",
     image: "./images/nusapenida_island.webp",
     desc: "testing",
-    popular: true,
+    include: [""],
+    popular: false,
     id: 5,
   },
   {
@@ -52,6 +75,7 @@ export const CardAllActivities = [
     price: "2.000.000",
     image: "./images/hero_image1.png",
     desc: "testing",
+    include: [""],
     popular: false,
     id: 6,
   },
@@ -60,7 +84,8 @@ export const CardAllActivities = [
     price: "1.000.000",
     image: "./images/hero_image1.png",
     desc: "testing",
-    popular: true,
+    include: [""],
+    popular: false,
     id: 7,
   },
   {
@@ -68,8 +93,28 @@ export const CardAllActivities = [
     price: "1.000.000",
     image: "./images/hero_image1.png",
     desc: "testing",
+    include: [""],
     popular: false,
     id: 8,
+  },
+  // half day full day
+  {
+    title: "Half-day Tour",
+    price: "650.000",
+    image: "./images/hero_image1.png",
+    desc: "5 Hours of Tour / Car",
+    include: [""],
+    popular: true,
+    id: 9,
+  },
+  {
+    title: "Bali Full Day Instagram Highlight Trip",
+    price: "950.000",
+    image: "./images/hero_image1.png",
+    desc: "Make your Instagram followers envious as you explore Bali on a customizable day trip to its most recognizable hotspots.",
+    include: ["10 Hours of Tour"],
+    popular: true,
+    id: 10,
   },
 ];
 
@@ -79,3 +124,106 @@ export const HeroImage = {
   Activities: "./images/beach_club.jpg",
   Contact: "./images/NJ_BubbleGum_22.jpg",
 };
+
+export const ServiceDetail = [
+  // Airport
+  {
+    name: "Airport Transfer - Seminyak",
+    price: "300.000",
+    id: "0",
+  },
+  {
+    name: "Airport Transfer - Umalas Kerobokan, Canggu",
+    price: "350.000",
+    id: "1",
+  },
+  {
+    name: "Airport Transfer - Pererenan, Uluwatu",
+    price: "400.000",
+    id: "2",
+  },
+  {
+    name: "Airport Transfer - Ubud",
+    price: "500.000",
+    id: "3",
+  },
+  {
+    name: "Airport Transfer - Tabanan",
+    price: "500.000",
+    id: "4",
+  },
+  // Sanur
+  {
+    name: "Sanur - Seminyak, Canggu",
+    price: "350.000",
+    id: "5",
+  },
+  {
+    name: "Sanur - Umalas Kerobokan, Canggu",
+    price: "400.000",
+    id: "6",
+  },
+  {
+    name: "Sanur - Pererenan, Uluwatu",
+    price: "450.000",
+    id: "7",
+  },
+  {
+    name: "Sanur - Ubud",
+    price: "400.000",
+    id: "8",
+  },
+  // Padang Bai
+  {
+    name: "Padang Bai - Seminyak, Canggu",
+    price: "600.000",
+    id: "9",
+  },
+  {
+    name: "Padang Bai - Umalas Kerobokan, Canggu",
+    price: "700.000",
+    id: "10",
+  },
+  {
+    name: "Padang Bai - Pererenan, Uluwatu",
+    price: "750.000",
+    id: "11",
+  },
+  {
+    name: "Padang Bai - Ubud",
+    price: "600.000",
+    id: "12",
+  },
+  // Uluwatu
+  {
+    name: "Uluwatu - Seminyak, Canggu",
+    price: "400.000",
+    id: "13",
+  },
+  {
+    name: "Uluwatu - Umalas Kerobokan, Canggu",
+    price: "450.000",
+    id: "14",
+  },
+  {
+    name: "Uluwatu - Pererenan, Uluwatu",
+    price: "500.000",
+    id: "15",
+  },
+  {
+    name: "Uluwatu - Ubud",
+    price: "600.000",
+    id: "16",
+  },
+];
+
+export const Review = [
+  {
+    text: "Awesome Driver",
+    name: "Aron Smith",
+    desc: "Lorem ipsum is siply dummy text",
+    image: "./images/hero_image1.png",
+    profilePicture: "./images/hero_image1.png",
+    id: "1",
+  },
+];

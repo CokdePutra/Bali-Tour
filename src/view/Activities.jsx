@@ -4,13 +4,12 @@ import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
 import Card from "../components/Card/Card";
 import { CardAllActivities, HeroImage } from "../constants/constants";
-import Loader from "../components/utils/Loader"; // Ensure the path is correct
+import Loader from "../components/utils/Loader";
 
 const Activities = () => {
-  const initialActivitiesToShow = 6; // Number of activities to show initially
-  const additionalActivitiesToShow = 6; // Number of activities to load when "See More" is clicked
+  const initialActivitiesToShow = 6;
+  const additionalActivitiesToShow = 6;
 
-  // Load saved visible activities from localStorage, or show the initial activities if none are saved
   const savedActivities =
     JSON.parse(localStorage.getItem("visibleActivities")) || [];
   const [visibleActivities, setVisibleActivities] = useState(
@@ -19,8 +18,8 @@ const Activities = () => {
       : CardAllActivities.slice(0, initialActivitiesToShow)
   );
   const [loading, setLoading] = useState(false);
+  const [sortOption, setSortOption] = useState("Most Popular");
 
-  // Save visible activities to localStorage whenever they change
   useEffect(() => {
     localStorage.setItem(
       "visibleActivities",
@@ -31,7 +30,6 @@ const Activities = () => {
   const handleSeeMore = () => {
     setLoading(true);
 
-    // Simulate a network request delay
     setTimeout(() => {
       const nextActivities = CardAllActivities.slice(
         visibleActivities.length,
@@ -42,20 +40,60 @@ const Activities = () => {
         ...nextActivities,
       ]);
       setLoading(false);
-    }, 1000); // Adjust the delay as needed
+    }, 1000);
+  };
+
+  const handleSortChange = (event) => {
+    const selectedOption = event.target.value;
+    setSortOption(selectedOption);
+
+    const sortedActivities = [...visibleActivities].sort((a, b) => {
+      switch (selectedOption) {
+        case "Most Popular":
+          return b.popular - a.popular;
+        case "Cheaper":
+          return (
+            parseInt(a.price.replace(/\./g, ""), 10) -
+            parseInt(b.price.replace(/\./g, ""), 10)
+          );
+        case "Fancy":
+          return (
+            parseInt(b.price.replace(/\./g, ""), 10) -
+            parseInt(a.price.replace(/\./g, ""), 10)
+          );
+        case "A-Z":
+          return a.title.localeCompare(b.title);
+        case "Z-A":
+          return b.title.localeCompare(a.title);
+        default:
+          return 0;
+      }
+    });
+
+    setVisibleActivities(sortedActivities);
   };
 
   return (
     <>
       <Navbar />
       <Hero backgroundImage={HeroImage.Activities} title="Activities" />
-      <h2 className="Title mt-[3rem] md:my-[4rem]">Our Best Activities</h2>
+      <h2 className="Title mt-[3rem] md:my-[4rem]" data-aos="fade-up">
+        Our Best Activities
+      </h2>
 
-      {/* fitur baru belum selesai */}
-      <div className="dropDown">
-        <button type="button">Most Popular</button>
+      {/* Sorting Dropdown */}
+      <div className="flex justify-end m-8" data-aos="fade-up">
+        <select
+          value={sortOption}
+          onChange={handleSortChange}
+          className="dropDown-select p-2 border rounded">
+          <option value="Most Popular">Most Popular</option>
+          <option value="Cheaper">Cheaper</option>
+          <option value="Fancy">Fancy</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+        </select>
       </div>
-      {/* end fitur */}
 
       <div className="flex-col grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 m-10">
         <Card CardValue={visibleActivities} />

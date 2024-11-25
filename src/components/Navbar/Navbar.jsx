@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import ButtonBook from "../Button/ButtonBook";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false); // New state for scroll detection
   const navbarRef = useRef(null);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -38,23 +39,26 @@ const Navbar = () => {
 
   const createWhatsAppLink = () => {
     const phoneNumber = "6281239199662"; // Replace with the actual WhatsApp number
-    const message = `Hello, I'm interested to the tour`;
+    const message = `Hello, I'm interested in the tour`;
     const encodedMessage = encodeURIComponent(message);
     return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   };
 
-  const toAboutUs = (event) => {
-    event.preventDefault;
+  const toContactUs = (event) => {
+    event.preventDefault();
 
-    if (window.location.pathname != "/") {
-      Router.push("/");
+    if (window.location.pathname !== "/") {
+      navigate("/");
     }
 
     setTimeout(() => {
-      window.scrollTo({
-        top: document.querySelector("about-us").offsetTop - 125,
-        behavior: "smooth",
-      });
+      const contactUsSection = document.getElementById("Contact");
+      if (contactUsSection) {
+        window.scrollTo({
+          top: contactUsSection.offsetTop - 125,
+          behavior: "smooth",
+        });
+      }
     }, 50);
   };
 
@@ -64,7 +68,7 @@ const Navbar = () => {
       className={`w-full sticky top-0 z-50 poppins-regular ${
         isScrolled ? "bg-white" : "bg-transparent"
       } transition-colors duration-300`}>
-      <div className="flex justify-between items-center p-4 mx-[2rem]">
+      <div className="flex justify-between items-center p-4 mx-[2rem] mt-[-1.5rem]">
         {/* Desktop Title */}
         <div
           className={`${
@@ -134,27 +138,19 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}>
               Activities
             </NavLink>
-            <a
-              href="/#Contact"
+            <button
               className={`Navlink relative py-2 md:py-0 ${
                 isScrolled ? "text-black" : "text-black md:text-white"
               }`}
-              onClick={() => {
-                setIsOpen(false);
-                document
-                  .getElementById("Contact")
-                  .scrollIntoView({ behavior: "smooth" });
-              }}>
+              onClick={toContactUs}>
               Contact
-            </a>
+            </button>
             <NavLink
-              to="/Review"
-              className={({ isActive }) =>
-                `Navlink relative ${
-                  isScrolled ? "text-black" : "text-black md:text-white"
-                } ${isActive ? "underline" : ""} py-2 md:py-0`
-              }
-              onClick={(() => setIsOpen(false), toAboutUs)}>
+              to="/review"
+              className={`Navlink relative py-2 md:py-0 ${
+                isScrolled ? "text-black" : "text-black md:text-white"
+              }`}
+              onClick={() => setIsOpen(false)}>
               Review
             </NavLink>
           </div>
