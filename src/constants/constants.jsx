@@ -216,14 +216,3 @@ export const ServiceDetail = [
     id: "16",
   },
 ];
-
-export const Review = [
-  {
-    text: "Awesome Driver",
-    name: "Aron Smith",
-    desc: "Lorem ipsum is siply dummy text",
-    image: "./images/hero_image1.png",
-    profilePicture: "./images/hero_image1.png",
-    id: "1",
-  },
-];
