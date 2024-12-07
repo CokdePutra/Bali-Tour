@@ -133,12 +133,12 @@ export const ServiceDetail = [
     id: "0",
   },
   {
-    name: "Airport Transfer - Umalas Kerobokan, Canggu",
+    name: "Airport Transfer - Umalas/Kerobokan/Canggu",
     price: "350.000",
     id: "1",
   },
   {
-    name: "Airport Transfer - Pererenan, Uluwatu",
+    name: "Airport Transfer - Uluwatu",
     price: "400.000",
     id: "2",
   },
@@ -154,17 +154,17 @@ export const ServiceDetail = [
   },
   // Sanur
   {
-    name: "Sanur - Seminyak, Canggu",
+    name: "Sanur - Seminyak",
     price: "350.000",
     id: "5",
   },
   {
-    name: "Sanur - Umalas Kerobokan, Canggu",
+    name: "Sanur - Umalas/Kerobokan/Canggu",
     price: "400.000",
     id: "6",
   },
   {
-    name: "Sanur - Pererenan, Uluwatu",
+    name: "Sanur - NusaDua/Uluwatu",
     price: "450.000",
     id: "7",
   },
@@ -175,17 +175,17 @@ export const ServiceDetail = [
   },
   // Padang Bai
   {
-    name: "Padang Bai - Seminyak, Canggu",
+    name: "Padang Bai - Seminyak",
     price: "600.000",
     id: "9",
   },
   {
-    name: "Padang Bai - Umalas Kerobokan, Canggu",
+    name: "Padang Bai - Umalas/Kerobokan/Canggu",
     price: "700.000",
     id: "10",
   },
   {
-    name: "Padang Bai - Pererenan, Uluwatu",
+    name: "Padang Bai - NusaDua/Uluwatu",
     price: "750.000",
     id: "11",
   },
@@ -196,17 +196,17 @@ export const ServiceDetail = [
   },
   // Uluwatu
   {
-    name: "Uluwatu - Seminyak, Canggu",
+    name: "Uluwatu - Seminyak",
     price: "400.000",
     id: "13",
   },
   {
-    name: "Uluwatu - Umalas Kerobokan, Canggu",
+    name: "Uluwatu - Umalas/Kerobokan/Canggu",
     price: "450.000",
     id: "14",
   },
   {
-    name: "Uluwatu - Pererenan, Uluwatu",
+    name: "Uluwatu - NusaDua/Uluwatu",
     price: "500.000",
     id: "15",
   },

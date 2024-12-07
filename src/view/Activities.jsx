@@ -86,7 +86,7 @@ const Activities = () => {
         <select
           value={sortOption}
           onChange={handleSortChange}
-          className="dropDown-select p-2 border rounded">
+          className="dropDown-select p-3 pl-4 pr-10 border border-gray-300 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out">
           <option value="Most Popular">Most Popular</option>
           <option value="Cheaper">Cheaper</option>
           <option value="Fancy">Fancy</option>

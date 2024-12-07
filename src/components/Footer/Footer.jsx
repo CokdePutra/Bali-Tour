@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="container-footer w-full mx-auto flex flex-col md:flex-row justify-between gap-12 p-10 bg-primary">
           <div className="section my-3" data-aos="fade-up">
             <h4 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
-              BAGUS BALI TOUR & TRANSPORT
+              BAGUS BALIKU TOUR & TRANSPORT
             </h4>
             <h5 className="text-footer-text text-lg mt-2 mb-2">
               Have any questions? Contact us!
@@ -39,15 +39,15 @@ const Footer = () => {
               <div className="email flex items-center gap-2">
                 <BiLogoGmail style={iconEmail} />
                 <a href="" className="text-footer-text text-lg">
-                  hendraidabagus@gmail.com
+                  hendraidabagus81@gmail.com
                 </a>
               </div>
-              <div className="facebook flex items-center gap-2">
+              {/* <div className="facebook flex items-center gap-2">
                 <BiLogoFacebookCircle style={iconFacebook} />
                 <a href="" className="text-footer-text text-lg">
                   @balitourtoday
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="section my-3" data-aos="fade-up">

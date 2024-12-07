@@ -63,17 +63,14 @@ const Home = () => {
                 We Are BAGUS BALI TOUR & TRANSPORT
               </h3>
               <p className="text-justify">
-                Welcome to our presence on the web! My name is Gusti and I am
-                the owner of Bali Driver Private Tour. We are a professional
-                organizer for Bali tour packages and provide English speaking
-                drivers for all your tour and transport needs while you are on
-                Bali. I was born and raised in Bali. I am a husband, a father of
-                two and a taxi and now tour driver for the past 12 years. I
-                learned English in my 5 years as a bartender working for an
-                international cruise ship company. I have had the pleasure to
-                show our beautiful country to customers from around the world. I
-                have gained great friendships over the years and have been
-                blessed to be able to work in a job that I love.
+                Welcome to our presence on the web! My name is Bagus and I am
+                the owner of Bagus Bali Tour & Transport. We are a professional
+                organizer for Bali tour packages. I was born and raised in Bali.
+                I am a husband, a father of three.I learned English through my
+                customers bit by bit everytime I take my customers on tour. I
+                enjoy to show the beautiful island of Bali to customers from
+                around the world. I have gained great friendships over the years
+                and have been blessed to be able to work in a job that I love.
               </p>
             </div>
           </div>

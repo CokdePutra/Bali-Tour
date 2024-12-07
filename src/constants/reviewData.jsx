@@ -4,7 +4,7 @@ export const ReviewTour = [
     name: "Aron Smith",
     date: "March 24, 2024",
     text: "My experience with Bagus Bali Tour was nothing short of amazing! From the seamless planning to the exceptional service, they made exploring Bali truly unforgettable.",
-    stars: 4.5,
+    stars: 5,
     profileImage:
       "https://i.pinimg.com/736x/72/11/e0/7211e009a2e6ba825110ec4fd634d164.jpg",
   },
@@ -21,7 +21,7 @@ export const ReviewTour = [
     name: "Michael Lee",
     date: "January 10, 2024",
     text: "Great experience overall. The transportation was comfortable, and the hidden spots they showed us were a delightful surprise. Would book again!",
-    stars: 4,
+    stars: 5,
     profileImage: "https://via.placeholder.com/50",
   },
   {
@@ -37,7 +37,7 @@ export const ReviewTour = [
     name: "Lucas Williams",
     date: "May 30, 2024",
     text: "We had an amazing time with Bagus Bali Tour. The local culture was well-explained, and the whole experience was smooth and stress-free.",
-    stars: 4.5,
+    stars: 5,
     profileImage: "https://via.placeholder.com/50",
   },
   {
@@ -53,7 +53,7 @@ export const ReviewTour = [
     name: "James Brown",
     date: "July 12, 2024",
     text: "I loved the Bali tour! From the picturesque landscapes to the fantastic guides, it was an experience I will cherish forever.",
-    stars: 4,
+    stars: 5,
     profileImage: "https://via.placeholder.com/50",
   },
   {
@@ -61,7 +61,7 @@ export const ReviewTour = [
     name: "Olivia Davis",
     date: "August 2, 2024",
     text: "An absolutely wonderful trip. The tour guides were passionate and knowledgeable, making the experience all the more special.",
-    stars: 4.5,
+    stars: 5,
     profileImage: "https://via.placeholder.com/50",
   },
   {

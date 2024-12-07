@@ -74,7 +74,7 @@ const Navbar = () => {
           className={`${
             isScrolled ? "text-black" : "text-white"
           } poppins-bold text-sm md:hidden lg:block lg:text-3xl`}>
-          <NavLink to="/">BAGUS BALI TOUR & TRANSPORT</NavLink>
+          <NavLink to="/">BAGUS BALIKU TOUR & TRANSPORT</NavLink>
         </div>
 
         {/* Mobile Menu Button */}
