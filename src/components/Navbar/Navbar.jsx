@@ -38,7 +38,7 @@ const Navbar = () => {
   }, []);
 
   const createWhatsAppLink = () => {
-    const phoneNumber = "6281239199662"; // Replace with the actual WhatsApp number
+    const phoneNumber = "6281337882648"; // Replace with the actual WhatsApp number
     const message = `Hello, I'm interested in the tour`;
     const encodedMessage = encodeURIComponent(message);
     return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
@@ -74,7 +74,7 @@ const Navbar = () => {
           className={`${
             isScrolled ? "text-black" : "text-white"
           } poppins-bold text-sm md:hidden lg:block lg:text-3xl`}>
-          <NavLink to="/">BAGUS BALI TOUR & TRANSPORT</NavLink>
+          <NavLink to="/">BAGUS BALIKU TOUR & TRANSPORT</NavLink>
         </div>
 
         {/* Mobile Menu Button */}
