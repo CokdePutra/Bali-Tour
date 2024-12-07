@@ -60,7 +60,7 @@ const Home = () => {
               className="right lg:w-1/2 m-4 mt-10 justify-center"
               data-aos="fade-up">
               <h3 className="Title text-2xl mt-10">
-                We Are BAGUS BALI TOUR & TRANSPORT
+                We Are BAGUS BALIKU TOUR & TRANSPORT
               </h3>
               <p className="text-justify">
                 Welcome to our presence on the web! My name is Bagus and I am
