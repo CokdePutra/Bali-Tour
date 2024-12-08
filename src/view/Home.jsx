@@ -98,7 +98,7 @@ const Home = () => {
               data-aos="fade-up">
               <h3 className="Title text-2xl mt-10">100% Kids Friendly</h3>
               <p className="Desc text-justify">
-                Myeslf and several of my drivers have kids as well. Kids play a
+                Myself and several of my drivers have kids as well. Kids play a
                 large part in Balinese culture and they are included in social
                 life early on. We are always happy to have the “little ones”
                 with us on tour.
@@ -109,10 +109,12 @@ const Home = () => {
               data-aos="fade-up">
               <h3 className="Title text-2xl mt-10">Independent</h3>
               <p className="Desc text-justify">
-                All of our drivers are English speaking and are from the area.
-                You will have access to local knowledge and your driver can
-                answer most of the questions you may have. An optional
-                professional guide is available upon request at an extra charge.
+                Bagus Baliku Tour offers personalized tours to help you explore
+                the beauty and culture of Bali. Our friendly guides show you the
+                best sights, from scenic spots to cultural landmarks. We focus
+                on making your experience comfortable and memorable, ensuring
+                you have a great time exploring Bali. Whether you're looking for
+                adventure or relaxation, we’ve got the perfect tour for you.
               </p>
             </div>
             <div
@@ -120,10 +122,9 @@ const Home = () => {
               data-aos="fade-up">
               <h3 className="Title text-2xl mt-10">Lots of Positive Reviews</h3>
               <p className="Desc text-justify">
-                Myeslf and several of my drivers have kids as well. Kids play a
-                large part in Balinese culture and they are included in social
-                life early on. We are always happy to have the “little ones”
-                with us on tour.
+                Our exceptional service and dedication to customer satisfaction
+                have earned us countless positive reviews from happy clients.
+                Experience the quality that so many have praised!.
               </p>
             </div>
           </div>

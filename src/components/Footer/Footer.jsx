@@ -32,16 +32,22 @@ const Footer = () => {
             <div className="social-media flex flex-col gap-4">
               <div className="whatsapp flex items-center gap-2">
                 <BiLogoWhatsapp style={iconWA} />
-                <a href="" className="text-footer-text text-lg">
+                <a
+                  href=""
+                  className="text-footer-text text-lg"
+                  onClick={() => window.open(createWhatsAppLink(), "_blank")}>
                   +62 813-3788-2648
                 </a>
               </div>
               <div className="email flex items-center gap-2">
                 <BiLogoGmail style={iconEmail} />
-                <a href="" className="text-footer-text text-lg">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=hendraidabagus81@gmail.com"
+                  className="text-footer-text text-lg">
                   hendraidabagus81@gmail.com
                 </a>
               </div>
+
               {/* <div className="facebook flex items-center gap-2">
                 <BiLogoFacebookCircle style={iconFacebook} />
                 <a href="" className="text-footer-text text-lg">
