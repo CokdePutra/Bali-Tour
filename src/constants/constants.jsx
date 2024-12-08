@@ -129,86 +129,136 @@ export const ServiceDetail = [
     id: "0",
   },
   {
-    name: "Airport Transfer - Umalas/Kerobokan/Canggu",
+    name: "Airport Transfer - Umalas",
     price: "350.000",
     id: "1",
   },
   {
+    name: "Airport Transfer - Kerobokan",
+    price: "350.000",
+    id: "2",
+  },
+  {
+    name: "Airport Transfer - Canggu",
+    price: "350.000",
+    id: "3",
+  },
+  {
     name: "Airport Transfer - Uluwatu",
     price: "400.000",
-    id: "2",
+    id: "4",
   },
   {
     name: "Airport Transfer - Ubud",
     price: "500.000",
-    id: "3",
+    id: "5",
   },
   {
     name: "Airport Transfer - Tabanan",
     price: "500.000",
-    id: "4",
+    id: "6",
   },
   // Sanur
   {
     name: "Sanur - Seminyak",
     price: "350.000",
-    id: "5",
-  },
-  {
-    name: "Sanur - Umalas/Kerobokan/Canggu",
-    price: "400.000",
-    id: "6",
-  },
-  {
-    name: "Sanur - NusaDua/Uluwatu",
-    price: "450.000",
     id: "7",
+  },
+  {
+    name: "Sanur - Umalas",
+    price: "400.000",
+    id: "8",
+  },
+  {
+    name: "Sanur - Kerobokan",
+    price: "400.000",
+    id: "9",
+  },
+  {
+    name: "Sanur - Canggu",
+    price: "400.000",
+    id: "10",
+  },
+  {
+    name: "Sanur - NusaDua",
+    price: "450.000",
+    id: "11",
+  },
+  {
+    name: "Sanur - Uluwatu",
+    price: "450.000",
+    id: "12",
   },
   {
     name: "Sanur - Ubud",
     price: "400.000",
-    id: "8",
+    id: "13",
   },
   // Padang Bai
   {
     name: "Padang Bai - Seminyak",
     price: "600.000",
-    id: "9",
+    id: "14",
   },
   {
-    name: "Padang Bai - Umalas/Kerobokan/Canggu",
+    name: "Padang Bai - Umalas",
     price: "700.000",
-    id: "10",
+    id: "15",
   },
   {
-    name: "Padang Bai - NusaDua/Uluwatu",
+    name: "Padang Bai - Kerobokan",
+    price: "700.000",
+    id: "16",
+  },
+  {
+    name: "Padang Bai - Canggu",
+    price: "700.000",
+    id: "17",
+  },
+  {
+    name: "Padang Bai - NusaDua",
     price: "750.000",
-    id: "11",
+    id: "18",
+  },
+  {
+    name: "Padang Bai - Uluwatu",
+    price: "750.000",
+    id: "19",
   },
   {
     name: "Padang Bai - Ubud",
     price: "600.000",
-    id: "12",
+    id: "20",
   },
   // Uluwatu
   {
     name: "Uluwatu - Seminyak",
     price: "400.000",
-    id: "13",
+    id: "21",
   },
   {
-    name: "Uluwatu - Umalas/Kerobokan/Canggu",
+    name: "Uluwatu - Umalas",
     price: "450.000",
-    id: "14",
+    id: "22",
   },
   {
-    name: "Uluwatu - NusaDua/Uluwatu",
+    name: "Uluwatu - Kerobokan",
+    price: "450.000",
+    id: "23",
+  },
+  {
+    name: "Uluwatu - Canggu",
+    price: "450.000",
+    id: "24",
+  },
+  {
+    name: "Uluwatu - NusaDua",
     price: "500.000",
-    id: "15",
+    id: "25",
   },
   {
     name: "Uluwatu - Ubud",
     price: "600.000",
-    id: "16",
+    id: "26",
   },
 ];
