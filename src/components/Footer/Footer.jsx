@@ -11,7 +11,7 @@ const iconEmail = { color: "#eb493b", fontSize: "2rem", minWidth: "2rem" };
 const iconFacebook = { color: "#1f7bf2", fontSize: "2rem", minWidth: "2rem" };
 
 const createWhatsAppLink = () => {
-  const phoneNumber = "6281239199662"; // Replace with the actual WhatsApp number
+  const phoneNumber = "6281337882648"; // Replace with the actual WhatsApp number
   const message = `Hello, I'm interested to the tour`;
   const encodedMessage = encodeURIComponent(message);
   return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
