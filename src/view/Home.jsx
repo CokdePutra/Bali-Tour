@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { CardAllActivities, HeroImage } from "../constants/constants";
 import { NavLink } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
@@ -6,6 +5,7 @@ import Hero from "../components/Hero/Hero";
 import Card from "../components/Card/Card";
 import Footer from "../components/Footer/Footer";
 import Contact from "../components/Forms/Contact";
+import WhatsAppFloat from "../components/WhatsApp/WhatsAppFloat";
 // import Loader from "../components/Loader";
 // import { CardMostPopular } from "../constants/constants";
 // import { ActivitiesData } from "../api"; // Import the API connection function
@@ -113,7 +113,7 @@ const Home = () => {
                 the beauty and culture of Bali. Our friendly guides show you the
                 best sights, from scenic spots to cultural landmarks. We focus
                 on making your experience comfortable and memorable, ensuring
-                you have a great time exploring Bali. Whether you're looking for
+                you have a great time exploring Bali. Whether you&apos;re looking for
                 adventure or relaxation, we’ve got the perfect tour for you.
               </p>
             </div>
@@ -136,6 +136,7 @@ const Home = () => {
         {/* end section */}
         <Footer />
       </div>
+      <WhatsAppFloat />
     </>
   );
 };

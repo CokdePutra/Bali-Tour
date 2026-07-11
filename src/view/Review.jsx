@@ -1,10 +1,10 @@
-import React from "react";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa"; // Import star icons
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
 import { HeroImage } from "../constants/constants"; // Import Hero background image
 import { ReviewTour } from "../constants/reviewData"; // Import review data
+import WhatsAppFloat from "../components/WhatsApp/WhatsAppFloat";
 
 // Component to render individual star icons based on rating
 const RatingStars = ({ rating }) => {
@@ -68,6 +68,7 @@ const Review = () => {
       </div>
 
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 };

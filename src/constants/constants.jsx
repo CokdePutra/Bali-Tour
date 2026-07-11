@@ -112,6 +112,24 @@ export const CardAllActivities = [
     popular: true,
     id: 5,
   },
+  {
+    title: "Private Photo Session Half Day",
+    price: "3.500.000",
+    priceUnit: "person",
+    image: "./images/kuta_beach.jpg",
+    desc: "Want more variety and time to explore creative shots? Our Half-Day Private Photo Session gives you 3 full hours to capture the essence of your Bali trip. \n\n Whether at your villa or a nearby scenic location - like rice fields, beaches, or iconic landmarks - our photographer will help you create a diverse and beautiful photo collection. Perfect for content creators, couples, families, or pre-wedding shoots, this package allows for multiple outfit changes and a relaxed, unhurried experience. \n\n You'll receive up to 150 professionally edited photos, delivered digitally within a few days. Let us know your preferred location and we'll tailor the session to make the most of your Bali memories!",
+    include: [
+      "Professional photographer for 3 hours",
+      "Up to 150 professionally edited photos",
+      "Digital delivery within a few days",
+      "Multiple outfit changes",
+      "Location suggestions (villa, beach, rice field, or landmark)",
+      "Not include : Transportation to location",
+    ],
+    choosedTour: [], // Array to store selected tours
+    popular: false,
+    id: 6,
+  },
 ];
 
 export const HeroImage = {

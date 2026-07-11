@@ -1,14 +1,8 @@
-import React from "react";
 import ButtonBook from "../Button/ButtonBook";
-import {
-  BiLogoWhatsapp,
-  BiLogoGmail,
-  BiLogoFacebookCircle,
-} from "react-icons/bi";
+import { BiLogoWhatsapp, BiLogoGmail } from "react-icons/bi";
 
 const iconWA = { color: "#2cd46b", fontSize: "2rem", minWidth: "2rem" };
 const iconEmail = { color: "#eb493b", fontSize: "2rem", minWidth: "2rem" };
-const iconFacebook = { color: "#1f7bf2", fontSize: "2rem", minWidth: "2rem" };
 
 const createWhatsAppLink = () => {
   const phoneNumber = "6281337882648"; // Replace with the actual WhatsApp number
@@ -20,71 +14,71 @@ const createWhatsAppLink = () => {
 const Footer = () => {
   return (
     <>
-      <footer className="bg-primary-color mt-16 w-full text-left">
-        <div className="container-footer w-full mx-auto flex flex-col md:flex-row justify-between gap-12 p-10 bg-primary">
-          <div className="section my-3" data-aos="fade-up">
-            <h4 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
+      <footer className="w-full mt-16 text-left bg-primary-color">
+        <div className="flex flex-col justify-between w-full gap-12 p-10 mx-auto container-footer md:flex-row bg-primary">
+          <div className="my-3 section" data-aos="fade-up">
+            <h4 className="w-auto m-0 mt-2 mb-2 text-2xl text-left Title text-secondary-color">
               BAGUS BALIKU TOUR & TRANSPORT
             </h4>
-            <h5 className="text-footer-text text-lg mt-2 mb-2">
+            <h5 className="mt-2 mb-2 text-lg text-footer-text">
               Have any questions? Contact us!
             </h5>
-            <div className="social-media flex flex-col gap-4">
-              <div className="whatsapp flex items-center gap-2">
+            <div className="flex flex-col gap-4 social-media">
+              <div className="flex items-center gap-2 whatsapp">
                 <BiLogoWhatsapp style={iconWA} />
                 <a
                   href=""
-                  className="text-footer-text text-lg"
+                  className="text-lg text-footer-text"
                   onClick={() => window.open(createWhatsAppLink(), "_blank")}>
                   +62 813-3788-2648
                 </a>
               </div>
-              <div className="email flex items-center gap-2">
+              <div className="flex items-center gap-2 email">
                 <BiLogoGmail style={iconEmail} />
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=hendraidabagus81@gmail.com"
-                  className="text-footer-text text-lg">
+                  className="text-lg text-footer-text">
                   hendraidabagus81@gmail.com
                 </a>
               </div>
 
-              {/* <div className="facebook flex items-center gap-2">
+              {/* <div className="flex items-center gap-2 facebook">
                 <BiLogoFacebookCircle style={iconFacebook} />
-                <a href="" className="text-footer-text text-lg">
+                <a href="" className="text-lg text-footer-text">
                   @balitourtoday
                 </a>
               </div> */}
             </div>
           </div>
-          <div className="section my-3" data-aos="fade-up">
-            <h4 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
+          <div className="my-3 section" data-aos="fade-up">
+            <h4 className="w-auto m-0 mt-2 mb-2 text-2xl text-left Title text-secondary-color">
               Our Services
             </h4>
-            <div className="our-service grid">
-              <a href="/" className="text-footer-text text-lg">
+            <div className="grid our-service">
+              <a href="/" className="text-lg text-footer-text">
                 Pickup
               </a>
-              <a href="" className="text-footer-text text-lg">
+              <a href="" className="text-lg text-footer-text">
                 Transfer
               </a>
-              <a href="" className="text-footer-text text-lg">
+              <a href="" className="text-lg text-footer-text">
                 Trips
               </a>
-              <a href="" className="text-footer-text text-lg">
+              <a href="" className="text-lg text-footer-text">
                 Shopping by
               </a>
             </div>
           </div>
-          <div className="section my-3" data-aos="fade-up">
-            <h4 className="Title text-left m-0 w-auto text-secondary-color text-2xl mt-2 mb-2">
+          <div className="my-3 section" data-aos="fade-up">
+            <h4 className="w-auto m-0 mt-2 mb-2 text-2xl text-left Title text-secondary-color">
               Book Your Trip Now!
             </h4>
-            <h5 className="text-footer-text text-lg mt-2 mb-2">
+            <h5 className="mt-2 mb-2 text-lg text-footer-text">
               Let us know your tour needs and we will get in contact with you
             </h5>
             <ButtonBook
               textButton="BOOK NOW"
-              className="text-white md:block hidden"
+              className="hidden text-white md:block"
               onClick={() => window.open(createWhatsAppLink(), "_blank")}
             />
           </div>

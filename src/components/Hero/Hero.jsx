@@ -1,5 +1,3 @@
-import React from "react";
-
 const Hero = ({ backgroundImage, title, desc }) => {
   const sectionStyle = {
     backgroundImage: `url(${backgroundImage})`,

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
 import { HeroImage, ServiceDetail } from "../constants/constants";
 import ButtonBook from "../components/Button/ButtonBook";
+import WhatsAppFloat from "../components/WhatsApp/WhatsAppFloat";
 
 const Pickup = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -76,6 +77,7 @@ const Pickup = () => {
       </div>
       <p className="text-sm">Note : this price is /transfer and /car</p>
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 };

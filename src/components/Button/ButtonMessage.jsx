@@ -1,5 +1,3 @@
-import React from "react";
-
 const ButtonMessage = ({ textButton, className }) => {
   return (
     <button

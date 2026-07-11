@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
 import Card from "../components/Card/Card";
 import { CardAllActivities, HeroImage } from "../constants/constants";
 import Loader from "../components/utils/Loader";
+import WhatsAppFloat from "../components/WhatsApp/WhatsAppFloat";
 
 const Activities = () => {
   const initialActivitiesToShow = 6;
@@ -110,6 +111,7 @@ const Activities = () => {
         )
       )}
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 };

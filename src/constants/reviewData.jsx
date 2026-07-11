@@ -5,8 +5,7 @@ export const ReviewTour = [
     date: "March 24, 2024",
     text: "My experience with Bagus Baliku Tour was nothing short of amazing! From the seamless planning to the exceptional service, they made exploring Bali truly unforgettable.",
     stars: 5,
-    profileImage:
-      "https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg",
+    profileImage: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     id: "2",
@@ -14,8 +13,7 @@ export const ReviewTour = [
     date: "February 18, 2024",
     text: "Bagus Baliku Tour exceeded all my expectations! The itinerary was well-curated, and the guide was very knowledgeable and friendly. Highly recommend their service.",
     stars: 5,
-    profileImage:
-      "https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg",
+    profileImage: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
     id: "3",
@@ -23,8 +21,7 @@ export const ReviewTour = [
     date: "January 10, 2024",
     text: "Great experience overall. The transportation was comfortable, and the hidden spots they showed us were a delightful surprise. Would book again!",
     stars: 5,
-    profileImage:
-      "https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg",
+    profileImage: "https://randomuser.me/api/portraits/men/54.jpg",
   },
   {
     id: "4",
@@ -32,8 +29,7 @@ export const ReviewTour = [
     date: "April 5, 2024",
     text: "The tour was fantastic! The locations were breathtaking, and the guide made everything so much fun. I had an unforgettable experience.",
     stars: 5,
-    profileImage:
-      "https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg",
+    profileImage: "https://randomuser.me/api/portraits/women/68.jpg",
   },
   {
     id: "5",
@@ -41,8 +37,7 @@ export const ReviewTour = [
     date: "May 30, 2024",
     text: "We had an amazing time with Bagus Baliku Tour. The local culture was well-explained, and the whole experience was smooth and stress-free.",
     stars: 5,
-    profileImage:
-      "https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg",
+    profileImage: "https://randomuser.me/api/portraits/men/76.jpg",
   },
   {
     id: "6",
@@ -50,8 +45,7 @@ export const ReviewTour = [
     date: "June 20, 2024",
     text: "Bagus Baliku Tour made our trip to Bali extraordinary. The personalized attention made all the difference, and we visited spots we never would have found on our own.",
     stars: 5,
-    profileImage:
-      "https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg",
+    profileImage: "https://randomuser.me/api/portraits/women/12.jpg",
   },
   {
     id: "7",
@@ -59,8 +53,7 @@ export const ReviewTour = [
     date: "July 12, 2024",
     text: "I loved the Bali tour! From the picturesque landscapes to the fantastic guides, it was an experience I will cherish forever.",
     stars: 5,
-    profileImage:
-      "https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg",
+    profileImage: "https://randomuser.me/api/portraits/men/22.jpg",
   },
   {
     id: "8",
@@ -68,8 +61,7 @@ export const ReviewTour = [
     date: "August 2, 2024",
     text: "An absolutely wonderful trip. The tour guides were passionate and knowledgeable, making the experience all the more special.",
     stars: 5,
-    profileImage:
-      "https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg",
+    profileImage: "https://randomuser.me/api/portraits/women/29.jpg",
   },
   {
     id: "9",
@@ -77,8 +69,7 @@ export const ReviewTour = [
     date: "September 15, 2024",
     text: "The entire experience was well-organized. From the tour to the food, everything was perfect. I would highly recommend it to anyone visiting Bali.",
     stars: 5,
-    profileImage:
-      "https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg",
+    profileImage: "https://randomuser.me/api/portraits/men/85.jpg",
   },
   {
     id: "10",
@@ -86,7 +77,78 @@ export const ReviewTour = [
     date: "October 1, 2024",
     text: "Amazing service and unforgettable memories. We were taken to the most beautiful places in Bali, and every moment was magical.",
     stars: 5,
-    profileImage:
-      "https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg",
+    profileImage: "https://randomuser.me/api/portraits/women/50.jpg",
+  },
+  {
+    id: "11",
+    name: "Isabella Clark",
+    date: "January 22, 2025",
+    text: "Starting the new year with Bagus Baliku Tour was the best decision ever! Every detail was thoughtfully arranged, and the sunrise trek left us completely speechless.",
+    stars: 5,
+    profileImage: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    id: "12",
+    name: "Noah Wilson",
+    date: "March 8, 2025",
+    text: "Truly a five-star adventure! The team went above and beyond, showing us Bali's hidden gems and treating us like family the entire journey.",
+    stars: 5,
+    profileImage: "https://randomuser.me/api/portraits/men/40.jpg",
+  },
+  {
+    id: "13",
+    name: "Ava Rodriguez",
+    date: "May 17, 2025",
+    text: "Absolutely flawless from start to finish! The guides were warm, the scenery was stunning, and every stop felt like stepping into a postcard.",
+    stars: 5,
+    profileImage: "https://randomuser.me/api/portraits/women/33.jpg",
+  },
+  {
+    id: "14",
+    name: "Ethan Taylor",
+    date: "July 29, 2025",
+    text: "Bagus Baliku Tour delivered pure magic. The rice terraces, the waterfalls, the local food, everything was beyond what we imagined. Simply unforgettable!",
+    stars: 5,
+    profileImage: "https://randomuser.me/api/portraits/men/11.jpg",
+  },
+  {
+    id: "15",
+    name: "Mia Thompson",
+    date: "September 11, 2025",
+    text: "The most seamless and heartfelt tour we've ever taken. The guides anticipated our every need and made Bali feel like a second home.",
+    stars: 5,
+    profileImage: "https://randomuser.me/api/portraits/women/9.jpg",
+  },
+  {
+    id: "16",
+    name: "Benjamin Harris",
+    date: "November 26, 2025",
+    text: "An extraordinary way to end the year! Beautiful temples, breathtaking views, and a team that made every single moment count. Highly recommended!",
+    stars: 5,
+    profileImage: "https://randomuser.me/api/portraits/men/64.jpg",
+  },
+  {
+    id: "17",
+    name: "Connor",
+    date: "March 14, 2026",
+    text: "What an incredible way to explore Bali! Bagus Baliku Tour combined adventure, culture, and comfort perfectly. I couldn't have asked for a better experience.",
+    stars: 5,
+    profileImage: "https://randomuser.me/api/portraits/men/3.jpg",
+  },
+  {
+    id: "18",
+    name: "Sarah Fortin",
+    date: "April 9, 2026",
+    text: "Simply outstanding! Every destination was breathtaking and the guides made us feel so welcome. This tour turned our Bali trip into a dream come true.",
+    stars: 5,
+    profileImage: "https://randomuser.me/api/portraits/women/76.jpg",
+  },
+  {
+    id: "19",
+    name: "Samantha Fortin",
+    date: "May 21, 2026",
+    text: "Absolutely magical from beginning to end! The attention to detail, the warm hospitality, and the stunning locations made this the trip of a lifetime.",
+    stars: 5,
+    profileImage: "https://randomuser.me/api/portraits/women/89.jpg",
   },
 ];

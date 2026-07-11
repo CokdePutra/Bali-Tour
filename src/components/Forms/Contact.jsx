@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"; // Import useRef along with useState
+import { useState, useRef } from "react"; // Import useRef along with useState
 import ButtonMessage from "../Button/ButtonMessage";
 import emailjs from "emailjs-com"; // Ensure you have imported emailjs
 
